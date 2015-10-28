@@ -147,26 +147,5 @@
 
     }
 }
-/***
- //        switch (i) {
- //            case 0:
- //                view.currentCoverageHeight = [NSString stringWithFormat:@"%d",3*40];
- //                view.frame = CGRectMake(60+i*(60+(self.frame.size.width-50-3*60)/3), y, 60, 160*num1);
- //
- //
- //                break;
- //
- //            case 1:
- //                view.currentCoverageHeight = [NSString stringWithFormat:@"%d",2*40];
- //                view.frame = CGRectMake(60+i*(60+(self.frame.size.width-50-3*60)/3), y+40, 60, 120);
- //                break;
- //            case 2:
- //                view.currentCoverageHeight = [NSString stringWithFormat:@"%d",40];
- //                view.frame = CGRectMake(60+i*(60+(self.frame.size.width-50-3*60)/3), y+80, 60, 80);
- //                break;
- //
- //            default:
- //                break;
- //        }
- ****/
+
 @end
