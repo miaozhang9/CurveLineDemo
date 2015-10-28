@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182651601B82858900E0B94C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1826515F1B82858900E0B94C /* main.m */; };
+		182651631B82858900E0B94C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182651621B82858900E0B94C /* AppDelegate.m */; };
+		182651691B82858900E0B94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182651671B82858900E0B94C /* Main.storyboard */; };
+		1826516B1B82858900E0B94C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826516A1B82858900E0B94C /* Images.xcassets */; };
+		1826516E1B82858900E0B94C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826516C1B82858900E0B94C /* LaunchScreen.xib */; };
+		1826517A1B82858900E0B94C /* CurveLineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182651791B82858900E0B94C /* CurveLineDemoTests.m */; };
+		184966CE1B9C3B6400B51494 /* ParabolaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C11B9C3B6400B51494 /* ParabolaView.m */; };
+		184966CF1B9C3B6400B51494 /* PolicyScanAdvertiseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C31B9C3B6400B51494 /* PolicyScanAdvertiseCell.m */; };
+		184966D01B9C3B6400B51494 /* PolicyScanTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C51B9C3B6400B51494 /* PolicyScanTopView.m */; };
+		184966D11B9C3B6400B51494 /* PolicyScanWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C71B9C3B6400B51494 /* PolicyScanWordCell.m */; };
+		184966D21B9C3B6400B51494 /* StarStripesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C91B9C3B6400B51494 /* StarStripesView.m */; };
+		184966D31B9C3B6400B51494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966CB1B9C3B6400B51494 /* ViewController.m */; };
+		184966D41B9C3B6400B51494 /* WaveScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966CD1B9C3B6400B51494 /* WaveScaleView.m */; };
+		184966DB1B9C3D0D00B51494 /* YZTAssetSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966DA1B9C3D0D00B51494 /* YZTAssetSelectViewController.m */; };
+		184966DE1B9C3D6E00B51494 /* YZTAssetSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966DD1B9C3D6E00B51494 /* YZTAssetSelectCell.m */; };
+		184966E11B9C43CC00B51494 /* YZTBrankSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E01B9C43CC00B51494 /* YZTBrankSelectCell.m */; };
+		184966E41B9C440600B51494 /* YZTBrankSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E31B9C440600B51494 /* YZTBrankSelectViewController.m */; };
+		184966E71B9C466700B51494 /* YZTSafetyProtectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E61B9C466700B51494 /* YZTSafetyProtectViewController.m */; };
+		184966EA1B9C46A100B51494 /* YZTSafetyProtectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E91B9C46A100B51494 /* YZTSafetyProtectView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182651741B82858900E0B94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182651521B82858900E0B94C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182651591B82858900E0B94C;
+			remoteInfo = CurveLineDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1826515A1B82858900E0B94C /* CurveLineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurveLineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1826515E1B82858900E0B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1826515F1B82858900E0B94C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182651611B82858900E0B94C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		182651621B82858900E0B94C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		182651681B82858900E0B94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1826516A1B82858900E0B94C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1826516D1B82858900E0B94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		182651731B82858900E0B94C /* CurveLineDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurveLineDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182651781B82858900E0B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182651791B82858900E0B94C /* CurveLineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurveLineDemoTests.m; sourceTree = "<group>"; };
+		184966C01B9C3B6400B51494 /* ParabolaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParabolaView.h; sourceTree = "<group>"; };
+		184966C11B9C3B6400B51494 /* ParabolaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParabolaView.m; sourceTree = "<group>"; };
+		184966C21B9C3B6400B51494 /* PolicyScanAdvertiseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanAdvertiseCell.h; sourceTree = "<group>"; };
+		184966C31B9C3B6400B51494 /* PolicyScanAdvertiseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanAdvertiseCell.m; sourceTree = "<group>"; };
+		184966C41B9C3B6400B51494 /* PolicyScanTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanTopView.h; sourceTree = "<group>"; };
+		184966C51B9C3B6400B51494 /* PolicyScanTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanTopView.m; sourceTree = "<group>"; };
+		184966C61B9C3B6400B51494 /* PolicyScanWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanWordCell.h; sourceTree = "<group>"; };
+		184966C71B9C3B6400B51494 /* PolicyScanWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanWordCell.m; sourceTree = "<group>"; };
+		184966C81B9C3B6400B51494 /* StarStripesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarStripesView.h; sourceTree = "<group>"; };
+		184966C91B9C3B6400B51494 /* StarStripesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarStripesView.m; sourceTree = "<group>"; };
+		184966CA1B9C3B6400B51494 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		184966CB1B9C3B6400B51494 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		184966CC1B9C3B6400B51494 /* WaveScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveScaleView.h; sourceTree = "<group>"; };
+		184966CD1B9C3B6400B51494 /* WaveScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveScaleView.m; sourceTree = "<group>"; };
+		184966D91B9C3D0D00B51494 /* YZTAssetSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTAssetSelectViewController.h; sourceTree = "<group>"; };
+		184966DA1B9C3D0D00B51494 /* YZTAssetSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTAssetSelectViewController.m; sourceTree = "<group>"; };
+		184966DC1B9C3D6E00B51494 /* YZTAssetSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTAssetSelectCell.h; sourceTree = "<group>"; };
+		184966DD1B9C3D6E00B51494 /* YZTAssetSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTAssetSelectCell.m; sourceTree = "<group>"; };
+		184966DF1B9C43CC00B51494 /* YZTBrankSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTBrankSelectCell.h; sourceTree = "<group>"; };
+		184966E01B9C43CC00B51494 /* YZTBrankSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTBrankSelectCell.m; sourceTree = "<group>"; };
+		184966E21B9C440600B51494 /* YZTBrankSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTBrankSelectViewController.h; sourceTree = "<group>"; };
+		184966E31B9C440600B51494 /* YZTBrankSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTBrankSelectViewController.m; sourceTree = "<group>"; };
+		184966E51B9C466700B51494 /* YZTSafetyProtectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTSafetyProtectViewController.h; sourceTree = "<group>"; };
+		184966E61B9C466700B51494 /* YZTSafetyProtectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTSafetyProtectViewController.m; sourceTree = "<group>"; };
+		184966E81B9C46A100B51494 /* YZTSafetyProtectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTSafetyProtectView.h; sourceTree = "<group>"; };
+		184966E91B9C46A100B51494 /* YZTSafetyProtectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTSafetyProtectView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182651571B82858900E0B94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182651701B82858900E0B94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182651511B82858900E0B94C = {
+			isa = PBXGroup;
+			children = (
+				1826515C1B82858900E0B94C /* CurveLineDemo */,
+				182651761B82858900E0B94C /* CurveLineDemoTests */,
+				1826515B1B82858900E0B94C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1826515B1B82858900E0B94C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1826515A1B82858900E0B94C /* CurveLineDemo.app */,
+				182651731B82858900E0B94C /* CurveLineDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1826515C1B82858900E0B94C /* CurveLineDemo */ = {
+			isa = PBXGroup;
+			children = (
+				182651611B82858900E0B94C /* AppDelegate.h */,
+				182651621B82858900E0B94C /* AppDelegate.m */,
+				182651671B82858900E0B94C /* Main.storyboard */,
+				184966D51B9C3C4200B51494 /* 模拟登陆 */,
+				184966BF1B9C3B6400B51494 /* 波形图 */,
+				1826516A1B82858900E0B94C /* Images.xcassets */,
+				1826516C1B82858900E0B94C /* LaunchScreen.xib */,
+				1826515D1B82858900E0B94C /* Supporting Files */,
+			);
+			path = CurveLineDemo;
+			sourceTree = "<group>";
+		};
+		1826515D1B82858900E0B94C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1826515E1B82858900E0B94C /* Info.plist */,
+				1826515F1B82858900E0B94C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182651761B82858900E0B94C /* CurveLineDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				182651791B82858900E0B94C /* CurveLineDemoTests.m */,
+				182651771B82858900E0B94C /* Supporting Files */,
+			);
+			path = CurveLineDemoTests;
+			sourceTree = "<group>";
+		};
+		182651771B82858900E0B94C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182651781B82858900E0B94C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		184966BF1B9C3B6400B51494 /* 波形图 */ = {
+			isa = PBXGroup;
+			children = (
+				184966C01B9C3B6400B51494 /* ParabolaView.h */,
+				184966C11B9C3B6400B51494 /* ParabolaView.m */,
+				184966C21B9C3B6400B51494 /* PolicyScanAdvertiseCell.h */,
+				184966C31B9C3B6400B51494 /* PolicyScanAdvertiseCell.m */,
+				184966C41B9C3B6400B51494 /* PolicyScanTopView.h */,
+				184966C51B9C3B6400B51494 /* PolicyScanTopView.m */,
+				184966C61B9C3B6400B51494 /* PolicyScanWordCell.h */,
+				184966C71B9C3B6400B51494 /* PolicyScanWordCell.m */,
+				184966C81B9C3B6400B51494 /* StarStripesView.h */,
+				184966C91B9C3B6400B51494 /* StarStripesView.m */,
+				184966CA1B9C3B6400B51494 /* ViewController.h */,
+				184966CB1B9C3B6400B51494 /* ViewController.m */,
+				184966CC1B9C3B6400B51494 /* WaveScaleView.h */,
+				184966CD1B9C3B6400B51494 /* WaveScaleView.m */,
+			);
+			path = "波形图";
+			sourceTree = "<group>";
+		};
+		184966D51B9C3C4200B51494 /* 模拟登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				184966D91B9C3D0D00B51494 /* YZTAssetSelectViewController.h */,
+				184966DA1B9C3D0D00B51494 /* YZTAssetSelectViewController.m */,
+				184966DC1B9C3D6E00B51494 /* YZTAssetSelectCell.h */,
+				184966DD1B9C3D6E00B51494 /* YZTAssetSelectCell.m */,
+				184966E21B9C440600B51494 /* YZTBrankSelectViewController.h */,
+				184966E31B9C440600B51494 /* YZTBrankSelectViewController.m */,
+				184966DF1B9C43CC00B51494 /* YZTBrankSelectCell.h */,
+				184966E01B9C43CC00B51494 /* YZTBrankSelectCell.m */,
+				184966E51B9C466700B51494 /* YZTSafetyProtectViewController.h */,
+				184966E61B9C466700B51494 /* YZTSafetyProtectViewController.m */,
+				184966E81B9C46A100B51494 /* YZTSafetyProtectView.h */,
+				184966E91B9C46A100B51494 /* YZTSafetyProtectView.m */,
+			);
+			path = "模拟登陆";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182651591B82858900E0B94C /* CurveLineDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1826517D1B82858900E0B94C /* Build configuration list for PBXNativeTarget "CurveLineDemo" */;
+			buildPhases = (
+				182651561B82858900E0B94C /* Sources */,
+				182651571B82858900E0B94C /* Frameworks */,
+				182651581B82858900E0B94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurveLineDemo;
+			productName = CurveLineDemo;
+			productReference = 1826515A1B82858900E0B94C /* CurveLineDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182651721B82858900E0B94C /* CurveLineDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182651801B82858900E0B94C /* Build configuration list for PBXNativeTarget "CurveLineDemoTests" */;
+			buildPhases = (
+				1826516F1B82858900E0B94C /* Sources */,
+				182651701B82858900E0B94C /* Frameworks */,
+				182651711B82858900E0B94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182651751B82858900E0B94C /* PBXTargetDependency */,
+			);
+			name = CurveLineDemoTests;
+			productName = CurveLineDemoTests;
+			productReference = 182651731B82858900E0B94C /* CurveLineDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182651521B82858900E0B94C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = MZ;
+				TargetAttributes = {
+					182651591B82858900E0B94C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					182651721B82858900E0B94C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 182651591B82858900E0B94C;
+					};
+				};
+			};
+			buildConfigurationList = 182651551B82858900E0B94C /* Build configuration list for PBXProject "CurveLineDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182651511B82858900E0B94C;
+			productRefGroup = 1826515B1B82858900E0B94C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182651591B82858900E0B94C /* CurveLineDemo */,
+				182651721B82858900E0B94C /* CurveLineDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182651581B82858900E0B94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182651691B82858900E0B94C /* Main.storyboard in Resources */,
+				1826516E1B82858900E0B94C /* LaunchScreen.xib in Resources */,
+				1826516B1B82858900E0B94C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182651711B82858900E0B94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182651561B82858900E0B94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184966E11B9C43CC00B51494 /* YZTBrankSelectCell.m in Sources */,
+				184966EA1B9C46A100B51494 /* YZTSafetyProtectView.m in Sources */,
+				184966E41B9C440600B51494 /* YZTBrankSelectViewController.m in Sources */,
+				184966D01B9C3B6400B51494 /* PolicyScanTopView.m in Sources */,
+				184966D21B9C3B6400B51494 /* StarStripesView.m in Sources */,
+				184966D31B9C3B6400B51494 /* ViewController.m in Sources */,
+				184966DE1B9C3D6E00B51494 /* YZTAssetSelectCell.m in Sources */,
+				184966E71B9C466700B51494 /* YZTSafetyProtectViewController.m in Sources */,
+				184966CF1B9C3B6400B51494 /* PolicyScanAdvertiseCell.m in Sources */,
+				182651631B82858900E0B94C /* AppDelegate.m in Sources */,
+				184966DB1B9C3D0D00B51494 /* YZTAssetSelectViewController.m in Sources */,
+				184966D41B9C3B6400B51494 /* WaveScaleView.m in Sources */,
+				182651601B82858900E0B94C /* main.m in Sources */,
+				184966D11B9C3B6400B51494 /* PolicyScanWordCell.m in Sources */,
+				184966CE1B9C3B6400B51494 /* ParabolaView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1826516F1B82858900E0B94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1826517A1B82858900E0B94C /* CurveLineDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182651751B82858900E0B94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182651591B82858900E0B94C /* CurveLineDemo */;
+			targetProxy = 182651741B82858900E0B94C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		182651671B82858900E0B94C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182651681B82858900E0B94C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1826516C1B82858900E0B94C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1826516D1B82858900E0B94C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1826517B1B82858900E0B94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1826517C1B82858900E0B94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1826517E1B82858900E0B94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CurveLineDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1826517F1B82858900E0B94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CurveLineDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		182651811B82858900E0B94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurveLineDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurveLineDemo.app/CurveLineDemo";
+			};
+			name = Debug;
+		};
+		182651821B82858900E0B94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurveLineDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurveLineDemo.app/CurveLineDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182651551B82858900E0B94C /* Build configuration list for PBXProject "CurveLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826517B1B82858900E0B94C /* Debug */,
+				1826517C1B82858900E0B94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1826517D1B82858900E0B94C /* Build configuration list for PBXNativeTarget "CurveLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826517E1B82858900E0B94C /* Debug */,
+				1826517F1B82858900E0B94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182651801B82858900E0B94C /* Build configuration list for PBXNativeTarget "CurveLineDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182651811B82858900E0B94C /* Debug */,
+				182651821B82858900E0B94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182651521B82858900E0B94C /* Project object */;
+}
