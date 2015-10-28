@@ -10,5 +10,6 @@
 
 @interface ParabolaView : UIView
 
-@property (nonatomic,strong) NSString * currentCoverageHeight;
+@property (nonatomic,strong) NSString * currentCoverageHeight;//波纹高度
+- (void)stopWave;
 @end

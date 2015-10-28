@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class PolicyScanModel;
+@class WaveScaleView;
 @interface PolicyScanTopView : UIView
-
-
-- (id)initWithFrame:(CGRect)frame;
+@property (nonatomic,strong) PolicyScanModel *policyScanModel;
+@property (nonatomic,strong) WaveScaleView   *waveScaleView;
+- (id)initWithFrame:(CGRect)frame withPolicyScanModel:(PolicyScanModel *)policyScanModel;
 @end

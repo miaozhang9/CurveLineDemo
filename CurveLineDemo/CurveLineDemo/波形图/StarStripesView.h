@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface StarStripesView : UIView
-
+@property (nonatomic,strong) NSString *policylevel;
 @end

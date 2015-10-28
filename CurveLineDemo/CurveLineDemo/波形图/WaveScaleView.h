@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class PolicyScanModel;
 @interface WaveScaleView : UIView
+@property (nonatomic,strong) PolicyScanModel *policyScanModel;
+@property (nonatomic,strong) NSMutableArray  *parabolaViewArray;
 
+- (id)initWithFrame:(CGRect)frame withPolicyScanModel:(PolicyScanModel *)policyScanModel;
 @end

@@ -13,19 +13,13 @@
 		1826516B1B82858900E0B94C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826516A1B82858900E0B94C /* Images.xcassets */; };
 		1826516E1B82858900E0B94C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826516C1B82858900E0B94C /* LaunchScreen.xib */; };
 		1826517A1B82858900E0B94C /* CurveLineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182651791B82858900E0B94C /* CurveLineDemoTests.m */; };
-		184966CE1B9C3B6400B51494 /* ParabolaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C11B9C3B6400B51494 /* ParabolaView.m */; };
-		184966CF1B9C3B6400B51494 /* PolicyScanAdvertiseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C31B9C3B6400B51494 /* PolicyScanAdvertiseCell.m */; };
-		184966D01B9C3B6400B51494 /* PolicyScanTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C51B9C3B6400B51494 /* PolicyScanTopView.m */; };
-		184966D11B9C3B6400B51494 /* PolicyScanWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C71B9C3B6400B51494 /* PolicyScanWordCell.m */; };
-		184966D21B9C3B6400B51494 /* StarStripesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966C91B9C3B6400B51494 /* StarStripesView.m */; };
+		183D97D91BE08C8200C3D937 /* ParabolaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D97D01BE08C8200C3D937 /* ParabolaView.m */; settings = {ASSET_TAGS = (); }; };
+		183D97DA1BE08C8200C3D937 /* PolicyScanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D97D21BE08C8200C3D937 /* PolicyScanModel.m */; settings = {ASSET_TAGS = (); }; };
+		183D97DB1BE08C8200C3D937 /* PolicyScanTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D97D41BE08C8200C3D937 /* PolicyScanTopView.m */; settings = {ASSET_TAGS = (); }; };
+		183D97DC1BE08C8200C3D937 /* StarStripesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D97D61BE08C8200C3D937 /* StarStripesView.m */; settings = {ASSET_TAGS = (); }; };
+		183D97DD1BE08C8200C3D937 /* WaveScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D97D81BE08C8200C3D937 /* WaveScaleView.m */; settings = {ASSET_TAGS = (); }; };
+		183D97E01BE08E0400C3D937 /* InsuranceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D97DF1BE08E0400C3D937 /* InsuranceModel.m */; settings = {ASSET_TAGS = (); }; };
 		184966D31B9C3B6400B51494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966CB1B9C3B6400B51494 /* ViewController.m */; };
-		184966D41B9C3B6400B51494 /* WaveScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966CD1B9C3B6400B51494 /* WaveScaleView.m */; };
-		184966DB1B9C3D0D00B51494 /* YZTAssetSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966DA1B9C3D0D00B51494 /* YZTAssetSelectViewController.m */; };
-		184966DE1B9C3D6E00B51494 /* YZTAssetSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966DD1B9C3D6E00B51494 /* YZTAssetSelectCell.m */; };
-		184966E11B9C43CC00B51494 /* YZTBrankSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E01B9C43CC00B51494 /* YZTBrankSelectCell.m */; };
-		184966E41B9C440600B51494 /* YZTBrankSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E31B9C440600B51494 /* YZTBrankSelectViewController.m */; };
-		184966E71B9C466700B51494 /* YZTSafetyProtectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E61B9C466700B51494 /* YZTSafetyProtectViewController.m */; };
-		184966EA1B9C46A100B51494 /* YZTSafetyProtectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966E91B9C46A100B51494 /* YZTSafetyProtectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,32 +44,20 @@
 		182651731B82858900E0B94C /* CurveLineDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurveLineDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182651781B82858900E0B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182651791B82858900E0B94C /* CurveLineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurveLineDemoTests.m; sourceTree = "<group>"; };
-		184966C01B9C3B6400B51494 /* ParabolaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParabolaView.h; sourceTree = "<group>"; };
-		184966C11B9C3B6400B51494 /* ParabolaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParabolaView.m; sourceTree = "<group>"; };
-		184966C21B9C3B6400B51494 /* PolicyScanAdvertiseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanAdvertiseCell.h; sourceTree = "<group>"; };
-		184966C31B9C3B6400B51494 /* PolicyScanAdvertiseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanAdvertiseCell.m; sourceTree = "<group>"; };
-		184966C41B9C3B6400B51494 /* PolicyScanTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanTopView.h; sourceTree = "<group>"; };
-		184966C51B9C3B6400B51494 /* PolicyScanTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanTopView.m; sourceTree = "<group>"; };
-		184966C61B9C3B6400B51494 /* PolicyScanWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanWordCell.h; sourceTree = "<group>"; };
-		184966C71B9C3B6400B51494 /* PolicyScanWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanWordCell.m; sourceTree = "<group>"; };
-		184966C81B9C3B6400B51494 /* StarStripesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarStripesView.h; sourceTree = "<group>"; };
-		184966C91B9C3B6400B51494 /* StarStripesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarStripesView.m; sourceTree = "<group>"; };
-		184966CA1B9C3B6400B51494 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		184966CB1B9C3B6400B51494 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		184966CC1B9C3B6400B51494 /* WaveScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveScaleView.h; sourceTree = "<group>"; };
-		184966CD1B9C3B6400B51494 /* WaveScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveScaleView.m; sourceTree = "<group>"; };
-		184966D91B9C3D0D00B51494 /* YZTAssetSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTAssetSelectViewController.h; sourceTree = "<group>"; };
-		184966DA1B9C3D0D00B51494 /* YZTAssetSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTAssetSelectViewController.m; sourceTree = "<group>"; };
-		184966DC1B9C3D6E00B51494 /* YZTAssetSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTAssetSelectCell.h; sourceTree = "<group>"; };
-		184966DD1B9C3D6E00B51494 /* YZTAssetSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTAssetSelectCell.m; sourceTree = "<group>"; };
-		184966DF1B9C43CC00B51494 /* YZTBrankSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTBrankSelectCell.h; sourceTree = "<group>"; };
-		184966E01B9C43CC00B51494 /* YZTBrankSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTBrankSelectCell.m; sourceTree = "<group>"; };
-		184966E21B9C440600B51494 /* YZTBrankSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTBrankSelectViewController.h; sourceTree = "<group>"; };
-		184966E31B9C440600B51494 /* YZTBrankSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTBrankSelectViewController.m; sourceTree = "<group>"; };
-		184966E51B9C466700B51494 /* YZTSafetyProtectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTSafetyProtectViewController.h; sourceTree = "<group>"; };
-		184966E61B9C466700B51494 /* YZTSafetyProtectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTSafetyProtectViewController.m; sourceTree = "<group>"; };
-		184966E81B9C46A100B51494 /* YZTSafetyProtectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTSafetyProtectView.h; sourceTree = "<group>"; };
-		184966E91B9C46A100B51494 /* YZTSafetyProtectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTSafetyProtectView.m; sourceTree = "<group>"; };
+		183D97CF1BE08C8200C3D937 /* ParabolaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParabolaView.h; sourceTree = "<group>"; };
+		183D97D01BE08C8200C3D937 /* ParabolaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParabolaView.m; sourceTree = "<group>"; };
+		183D97D11BE08C8200C3D937 /* PolicyScanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanModel.h; sourceTree = "<group>"; };
+		183D97D21BE08C8200C3D937 /* PolicyScanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanModel.m; sourceTree = "<group>"; };
+		183D97D31BE08C8200C3D937 /* PolicyScanTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyScanTopView.h; sourceTree = "<group>"; };
+		183D97D41BE08C8200C3D937 /* PolicyScanTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyScanTopView.m; sourceTree = "<group>"; };
+		183D97D51BE08C8200C3D937 /* StarStripesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarStripesView.h; sourceTree = "<group>"; };
+		183D97D61BE08C8200C3D937 /* StarStripesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarStripesView.m; sourceTree = "<group>"; };
+		183D97D71BE08C8200C3D937 /* WaveScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveScaleView.h; sourceTree = "<group>"; };
+		183D97D81BE08C8200C3D937 /* WaveScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveScaleView.m; sourceTree = "<group>"; };
+		183D97DE1BE08E0400C3D937 /* InsuranceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuranceModel.h; sourceTree = "<group>"; };
+		183D97DF1BE08E0400C3D937 /* InsuranceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuranceModel.m; sourceTree = "<group>"; };
+		184966CA1B9C3B6400B51494 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "波形图/ViewController.h"; sourceTree = "<group>"; };
+		184966CB1B9C3B6400B51494 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "波形图/ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +102,8 @@
 				182651611B82858900E0B94C /* AppDelegate.h */,
 				182651621B82858900E0B94C /* AppDelegate.m */,
 				182651671B82858900E0B94C /* Main.storyboard */,
-				184966D51B9C3C4200B51494 /* 模拟登陆 */,
+				184966CA1B9C3B6400B51494 /* ViewController.h */,
+				184966CB1B9C3B6400B51494 /* ViewController.m */,
 				184966BF1B9C3B6400B51494 /* 波形图 */,
 				1826516A1B82858900E0B94C /* Images.xcassets */,
 				1826516C1B82858900E0B94C /* LaunchScreen.xib */,
@@ -158,41 +141,20 @@
 		184966BF1B9C3B6400B51494 /* 波形图 */ = {
 			isa = PBXGroup;
 			children = (
-				184966C01B9C3B6400B51494 /* ParabolaView.h */,
-				184966C11B9C3B6400B51494 /* ParabolaView.m */,
-				184966C21B9C3B6400B51494 /* PolicyScanAdvertiseCell.h */,
-				184966C31B9C3B6400B51494 /* PolicyScanAdvertiseCell.m */,
-				184966C41B9C3B6400B51494 /* PolicyScanTopView.h */,
-				184966C51B9C3B6400B51494 /* PolicyScanTopView.m */,
-				184966C61B9C3B6400B51494 /* PolicyScanWordCell.h */,
-				184966C71B9C3B6400B51494 /* PolicyScanWordCell.m */,
-				184966C81B9C3B6400B51494 /* StarStripesView.h */,
-				184966C91B9C3B6400B51494 /* StarStripesView.m */,
-				184966CA1B9C3B6400B51494 /* ViewController.h */,
-				184966CB1B9C3B6400B51494 /* ViewController.m */,
-				184966CC1B9C3B6400B51494 /* WaveScaleView.h */,
-				184966CD1B9C3B6400B51494 /* WaveScaleView.m */,
+				183D97CF1BE08C8200C3D937 /* ParabolaView.h */,
+				183D97D01BE08C8200C3D937 /* ParabolaView.m */,
+				183D97D31BE08C8200C3D937 /* PolicyScanTopView.h */,
+				183D97D41BE08C8200C3D937 /* PolicyScanTopView.m */,
+				183D97D51BE08C8200C3D937 /* StarStripesView.h */,
+				183D97D61BE08C8200C3D937 /* StarStripesView.m */,
+				183D97D71BE08C8200C3D937 /* WaveScaleView.h */,
+				183D97D81BE08C8200C3D937 /* WaveScaleView.m */,
+				183D97D11BE08C8200C3D937 /* PolicyScanModel.h */,
+				183D97D21BE08C8200C3D937 /* PolicyScanModel.m */,
+				183D97DE1BE08E0400C3D937 /* InsuranceModel.h */,
+				183D97DF1BE08E0400C3D937 /* InsuranceModel.m */,
 			);
 			path = "波形图";
-			sourceTree = "<group>";
-		};
-		184966D51B9C3C4200B51494 /* 模拟登陆 */ = {
-			isa = PBXGroup;
-			children = (
-				184966D91B9C3D0D00B51494 /* YZTAssetSelectViewController.h */,
-				184966DA1B9C3D0D00B51494 /* YZTAssetSelectViewController.m */,
-				184966DC1B9C3D6E00B51494 /* YZTAssetSelectCell.h */,
-				184966DD1B9C3D6E00B51494 /* YZTAssetSelectCell.m */,
-				184966E21B9C440600B51494 /* YZTBrankSelectViewController.h */,
-				184966E31B9C440600B51494 /* YZTBrankSelectViewController.m */,
-				184966DF1B9C43CC00B51494 /* YZTBrankSelectCell.h */,
-				184966E01B9C43CC00B51494 /* YZTBrankSelectCell.m */,
-				184966E51B9C466700B51494 /* YZTSafetyProtectViewController.h */,
-				184966E61B9C466700B51494 /* YZTSafetyProtectViewController.m */,
-				184966E81B9C46A100B51494 /* YZTSafetyProtectView.h */,
-				184966E91B9C46A100B51494 /* YZTSafetyProtectView.m */,
-			);
-			path = "模拟登陆";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,21 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184966E11B9C43CC00B51494 /* YZTBrankSelectCell.m in Sources */,
-				184966EA1B9C46A100B51494 /* YZTSafetyProtectView.m in Sources */,
-				184966E41B9C440600B51494 /* YZTBrankSelectViewController.m in Sources */,
-				184966D01B9C3B6400B51494 /* PolicyScanTopView.m in Sources */,
-				184966D21B9C3B6400B51494 /* StarStripesView.m in Sources */,
+				183D97DD1BE08C8200C3D937 /* WaveScaleView.m in Sources */,
+				183D97DA1BE08C8200C3D937 /* PolicyScanModel.m in Sources */,
+				183D97DC1BE08C8200C3D937 /* StarStripesView.m in Sources */,
+				183D97E01BE08E0400C3D937 /* InsuranceModel.m in Sources */,
 				184966D31B9C3B6400B51494 /* ViewController.m in Sources */,
-				184966DE1B9C3D6E00B51494 /* YZTAssetSelectCell.m in Sources */,
-				184966E71B9C466700B51494 /* YZTSafetyProtectViewController.m in Sources */,
-				184966CF1B9C3B6400B51494 /* PolicyScanAdvertiseCell.m in Sources */,
 				182651631B82858900E0B94C /* AppDelegate.m in Sources */,
-				184966DB1B9C3D0D00B51494 /* YZTAssetSelectViewController.m in Sources */,
-				184966D41B9C3B6400B51494 /* WaveScaleView.m in Sources */,
+				183D97DB1BE08C8200C3D937 /* PolicyScanTopView.m in Sources */,
+				183D97D91BE08C8200C3D937 /* ParabolaView.m in Sources */,
 				182651601B82858900E0B94C /* main.m in Sources */,
-				184966D11B9C3B6400B51494 /* PolicyScanWordCell.m in Sources */,
-				184966CE1B9C3B6400B51494 /* ParabolaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
