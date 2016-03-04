@@ -19,11 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self createPolicyScanTopView];
+
+    
+}
+
+
+
+- (void)createPolicyScanTopView{
     PolicyScanTopView *topView = [[PolicyScanTopView alloc] initWithFrame:CGRectMake(0,64, self.view.frame.size.width,  self.view.frame.size.height) withPolicyScanModel:[self getPolicyScanModel]];
     topView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:topView];
-
-    
 }
 
 - (PolicyScanModel *)getPolicyScanModel {
