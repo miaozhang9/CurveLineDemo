@@ -6,10 +6,10 @@
 //  Copyright © 2016年 MZ. All rights reserved.
 //
 
-#import "LuJinSuoProductCell.h"
+#import "YZTLuJinSuoProductCell.h"
 #import "Masonry.h"
 
-@implementation LuJinSuoProductCell
+@implementation YZTLuJinSuoProductCell
 
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

@@ -13,9 +13,9 @@
 		1826516B1B82858900E0B94C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826516A1B82858900E0B94C /* Images.xcassets */; };
 		1826516E1B82858900E0B94C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826516C1B82858900E0B94C /* LaunchScreen.xib */; };
 		1826517A1B82858900E0B94C /* CurveLineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182651791B82858900E0B94C /* CurveLineDemoTests.m */; };
-		183E77F61C882C0C001D575E /* LuJinSuoOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77EF1C882C0C001D575E /* LuJinSuoOrderCell.m */; };
-		183E77F71C882C0C001D575E /* LuJinSuoOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F11C882C0C001D575E /* LuJinSuoOrderDetailCell.m */; };
-		183E77F81C882C0C001D575E /* LuJinSuoProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F31C882C0C001D575E /* LuJinSuoProductCell.m */; };
+		183E77F61C882C0C001D575E /* YZTLuJinSuoOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77EF1C882C0C001D575E /* YZTLuJinSuoOrderCell.m */; };
+		183E77F71C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F11C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m */; };
+		183E77F81C882C0C001D575E /* YZTLuJinSuoProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F31C882C0C001D575E /* YZTLuJinSuoProductCell.m */; };
 		184966D31B9C3B6400B51494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966CB1B9C3B6400B51494 /* ViewController.m */; };
 		18A12EE01C86C0B8009F2893 /* InsuranceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12ED51C86C0B8009F2893 /* InsuranceModel.m */; };
 		18A12EE11C86C0B8009F2893 /* ParabolaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12ED71C86C0B8009F2893 /* ParabolaView.m */; };
@@ -33,7 +33,7 @@
 		18A12F0A1C86C46B009F2893 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12EFC1C86C46B009F2893 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		18A12F0B1C86C46B009F2893 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12EFE1C86C46B009F2893 /* View+MASAdditions.m */; };
 		18A12F0C1C86C46B009F2893 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12F011C86C46B009F2893 /* ViewController+MASAdditions.m */; };
-		18A12F0F1C86C4D5009F2893 /* LuJinSuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12F0E1C86C4D5009F2893 /* LuJinSuoViewController.m */; };
+		18A12F0F1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12F0E1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +58,12 @@
 		182651731B82858900E0B94C /* CurveLineDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurveLineDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182651781B82858900E0B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182651791B82858900E0B94C /* CurveLineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurveLineDemoTests.m; sourceTree = "<group>"; };
-		183E77EE1C882C0C001D575E /* LuJinSuoOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuJinSuoOrderCell.h; sourceTree = "<group>"; };
-		183E77EF1C882C0C001D575E /* LuJinSuoOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuJinSuoOrderCell.m; sourceTree = "<group>"; };
-		183E77F01C882C0C001D575E /* LuJinSuoOrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuJinSuoOrderDetailCell.h; sourceTree = "<group>"; };
-		183E77F11C882C0C001D575E /* LuJinSuoOrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuJinSuoOrderDetailCell.m; sourceTree = "<group>"; };
-		183E77F21C882C0C001D575E /* LuJinSuoProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuJinSuoProductCell.h; sourceTree = "<group>"; };
-		183E77F31C882C0C001D575E /* LuJinSuoProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuJinSuoProductCell.m; sourceTree = "<group>"; };
+		183E77EE1C882C0C001D575E /* YZTLuJinSuoOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTLuJinSuoOrderCell.h; sourceTree = "<group>"; };
+		183E77EF1C882C0C001D575E /* YZTLuJinSuoOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTLuJinSuoOrderCell.m; sourceTree = "<group>"; };
+		183E77F01C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTLuJinSuoOrderDetailCell.h; sourceTree = "<group>"; };
+		183E77F11C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTLuJinSuoOrderDetailCell.m; sourceTree = "<group>"; };
+		183E77F21C882C0C001D575E /* YZTLuJinSuoProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTLuJinSuoProductCell.h; sourceTree = "<group>"; };
+		183E77F31C882C0C001D575E /* YZTLuJinSuoProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTLuJinSuoProductCell.m; sourceTree = "<group>"; };
 		184966CA1B9C3B6400B51494 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "波形图/ViewController.h"; sourceTree = "<group>"; };
 		184966CB1B9C3B6400B51494 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "波形图/ViewController.m"; sourceTree = "<group>"; };
 		18A12ED41C86C0B8009F2893 /* InsuranceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuranceModel.h; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		18A12EFF1C86C46B009F2893 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		18A12F001C86C46B009F2893 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		18A12F011C86C46B009F2893 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		18A12F0D1C86C4D5009F2893 /* LuJinSuoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuJinSuoViewController.h; path = "波形图/陆金所/LuJinSuoViewController.h"; sourceTree = "<group>"; };
-		18A12F0E1C86C4D5009F2893 /* LuJinSuoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuJinSuoViewController.m; path = "波形图/陆金所/LuJinSuoViewController.m"; sourceTree = "<group>"; };
+		18A12F0D1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZTLuJinSuoProductListViewController.h; path = "波形图/陆金所/YZTLuJinSuoProductListViewController.h"; sourceTree = "<group>"; };
+		18A12F0E1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZTLuJinSuoProductListViewController.m; path = "波形图/陆金所/YZTLuJinSuoProductListViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +151,8 @@
 				182651671B82858900E0B94C /* Main.storyboard */,
 				184966CA1B9C3B6400B51494 /* ViewController.h */,
 				184966CB1B9C3B6400B51494 /* ViewController.m */,
-				18A12F0D1C86C4D5009F2893 /* LuJinSuoViewController.h */,
-				18A12F0E1C86C4D5009F2893 /* LuJinSuoViewController.m */,
+				18A12F0D1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.h */,
+				18A12F0E1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m */,
 				18A12EE61C86C0CE009F2893 /* 陆金所 */,
 				18A12ED31C86C0B8009F2893 /* 峰型流动图 */,
 				1826516A1B82858900E0B94C /* Images.xcassets */,
@@ -212,12 +212,12 @@
 		18A12EE61C86C0CE009F2893 /* 陆金所 */ = {
 			isa = PBXGroup;
 			children = (
-				183E77EE1C882C0C001D575E /* LuJinSuoOrderCell.h */,
-				183E77EF1C882C0C001D575E /* LuJinSuoOrderCell.m */,
-				183E77F01C882C0C001D575E /* LuJinSuoOrderDetailCell.h */,
-				183E77F11C882C0C001D575E /* LuJinSuoOrderDetailCell.m */,
-				183E77F21C882C0C001D575E /* LuJinSuoProductCell.h */,
-				183E77F31C882C0C001D575E /* LuJinSuoProductCell.m */,
+				183E77EE1C882C0C001D575E /* YZTLuJinSuoOrderCell.h */,
+				183E77EF1C882C0C001D575E /* YZTLuJinSuoOrderCell.m */,
+				183E77F01C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.h */,
+				183E77F11C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m */,
+				183E77F21C882C0C001D575E /* YZTLuJinSuoProductCell.h */,
+				183E77F31C882C0C001D575E /* YZTLuJinSuoProductCell.m */,
 			);
 			name = "陆金所";
 			path = "波形图/陆金所";
@@ -357,7 +357,7 @@
 			files = (
 				18A12F081C86C46B009F2893 /* MASViewConstraint.m in Sources */,
 				18A12EE01C86C0B8009F2893 /* InsuranceModel.m in Sources */,
-				183E77F71C882C0C001D575E /* LuJinSuoOrderDetailCell.m in Sources */,
+				183E77F71C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m in Sources */,
 				18A12F071C86C46B009F2893 /* MASViewAttribute.m in Sources */,
 				184966D31B9C3B6400B51494 /* ViewController.m in Sources */,
 				18A12EE21C86C0B8009F2893 /* PolicyScanModel.m in Sources */,
@@ -368,12 +368,12 @@
 				18A12F061C86C46B009F2893 /* MASLayoutConstraint.m in Sources */,
 				18A12F0C1C86C46B009F2893 /* ViewController+MASAdditions.m in Sources */,
 				18A12F041C86C46B009F2893 /* MASConstraint.m in Sources */,
-				183E77F81C882C0C001D575E /* LuJinSuoProductCell.m in Sources */,
+				183E77F81C882C0C001D575E /* YZTLuJinSuoProductCell.m in Sources */,
 				18A12EE11C86C0B8009F2893 /* ParabolaView.m in Sources */,
-				183E77F61C882C0C001D575E /* LuJinSuoOrderCell.m in Sources */,
+				183E77F61C882C0C001D575E /* YZTLuJinSuoOrderCell.m in Sources */,
 				18A12EE51C86C0B8009F2893 /* WaveScaleView.m in Sources */,
 				18A12F091C86C46B009F2893 /* NSArray+MASAdditions.m in Sources */,
-				18A12F0F1C86C4D5009F2893 /* LuJinSuoViewController.m in Sources */,
+				18A12F0F1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m in Sources */,
 				18A12F0A1C86C46B009F2893 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				182651631B82858900E0B94C /* AppDelegate.m in Sources */,
 				18A12EE31C86C0B8009F2893 /* PolicyScanTopView.m in Sources */,

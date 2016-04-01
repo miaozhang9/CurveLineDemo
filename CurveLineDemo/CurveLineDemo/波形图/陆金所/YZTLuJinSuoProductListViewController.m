@@ -6,17 +6,18 @@
 //  Copyright © 2016年 MZ. All rights reserved.
 //
 
-#import "LuJinSuoViewController.h"
+#import "YZTLuJinSuoProductListViewController.h"
 #import "Masonry.h"
-#import "LuJinSuoProductCell.h"
-#import "LuJinSuoOrderCell.h"
-#import "LuJinSuoOrderDetailCell.h"
+#import "YZTLuJinSuoProductCell.h"
+#import "YZTLuJinSuoOrderCell.h"
+#import "YZTLuJinSuoOrderDetailCell.h"
 
-@interface LuJinSuoViewController ()<UITableViewDataSource, UITableViewDelegate>
+
+@interface YZTLuJinSuoProductListViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @end
 
-@implementation LuJinSuoViewController
+@implementation YZTLuJinSuoProductListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,13 +32,20 @@
 }
 
 - (void)addSubviews {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-    //    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [_tableView setDelegate:self];
-    [_tableView setDataSource:self];
-    [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
-    [self.view addSubview:_tableView];
+    
+    if (!_tableView) {
+        
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        //    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView setDelegate:self];
+        [_tableView setDataSource:self];
+        [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+        [self.view addSubview:_tableView];
+        _tableView.separatorInset = UIEdgeInsetsMake(0, 50, 0, 0);
+        //    _tableView.separatorColor = RGB(204, 204, 204);
     }
+   
+}
 
 - (void)defineLayout {
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,9 +67,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 2) {
-        return 150.0f;
+        return 44.0f;
     }
-    return 100;
+    return 104;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -80,7 +88,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -88,11 +96,11 @@
     
     if (indexPath.row == 0) {
         
-    LuJinSuoProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
+    YZTLuJinSuoProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
     
     if (!cell) {
         
-        cell = [[LuJinSuoProductCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId"];
+        cell = [[YZTLuJinSuoProductCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
   
@@ -101,11 +109,11 @@
     
     } else  if (indexPath.row == 1){
         
-        LuJinSuoOrderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId2"];
+        YZTLuJinSuoOrderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId2"];
         
         if (!cell) {
             
-            cell = [[LuJinSuoOrderCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId2"];
+            cell = [[YZTLuJinSuoOrderCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId2"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
@@ -113,12 +121,27 @@
         return cell;
         
     }
-    else {
-        LuJinSuoOrderDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId3"];
+    else if (indexPath.row == 2) {
+        
+        YZTLuJinSuoOtherCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId3"];
         
         if (!cell) {
             
-            cell = [[LuJinSuoOrderDetailCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId3"];
+            cell = [[YZTLuJinSuoOtherCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId3"];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+        
+        
+        return cell;
+
+        
+    }
+    else {
+        YZTLuJinSuoOrderDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId4"];
+        
+        if (!cell) {
+            
+            cell = [[YZTLuJinSuoOrderDetailCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId4"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         

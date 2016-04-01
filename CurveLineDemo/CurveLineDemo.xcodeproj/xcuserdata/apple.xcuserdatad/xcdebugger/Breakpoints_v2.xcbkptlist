@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CurveLineDemo/&#x6ce2;&#x5f62;&#x56fe;/&#x9646;&#x91d1;&#x6240;/LuJinSuoViewController.m"
-            timestampString = "478692471.782406"
+            timestampString = "480924716.861481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-defineLayout"
             landmarkType = "5">
             <Locations>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CurveLineDemo/&#x6ce2;&#x5f62;&#x56fe;/&#x9646;&#x91d1;&#x6240;/LuJinSuoViewController.m"
-            timestampString = "478692471.782406"
+            timestampString = "480924716.861481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-defineLayout"
             landmarkType = "5">
          </BreakpointContent>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CurveLineDemo/&#x6ce2;&#x5f62;&#x56fe;/&#x9646;&#x91d1;&#x6240;/LuJinSuoViewController.m"
-            timestampString = "478692526.118881"
+            timestampString = "480924716.861481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>

@@ -221,4 +221,21 @@ for _ in 1...5 {
 }
 
 
+//早退语句
+var hasKey = true
+var credit : Int? = 10
+
+func 打的() {
+    guard hasKey else {
+        return
+    }
+    
+    guard let mycredit = credit where mycredit >= 6 else {
+        return
+    }
+    
+    print("欢迎乘坐本公司出租车!")
+}
+
+打的()
 

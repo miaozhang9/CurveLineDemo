@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LuJinSuoOrderDetailCell : UITableViewCell
+@interface YZTLuJinSuoOrderDetailCell : UITableViewCell
+
+@end
+
+
+@interface YZTLuJinSuoOtherCell : UITableViewCell
 
 @end

@@ -1,5 +1,5 @@
 //
-//  LuJinSuoTableViewCell.h
+//  LuJinSuoViewController.h
 //  CurveLineDemo
 //
 //  Created by apple on 16/3/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LuJinSuoProductCell : UITableViewCell
+@interface YZTLuJinSuoProductListViewController : UIViewController
 
 @end
