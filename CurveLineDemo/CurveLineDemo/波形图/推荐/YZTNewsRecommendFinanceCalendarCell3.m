@@ -6,10 +6,10 @@
 //  Copyright © 2016年 MZ. All rights reserved.
 //
 
-#import "YZTNewsRecommendFinanceCalendarCell.h"
+#import "YZTNewsRecommendFinanceCalendarCell3.h"
 #import "Masonry.h"
 
-@interface YZTNewsRecommendFinanceCalendarCell()
+@interface YZTNewsRecommendFinanceCalendarCell3()
 ///日期
 @property (nonatomic, strong) UILabel *dateLab;
 ///标识图片
@@ -26,7 +26,7 @@
 @property (nonatomic, strong) UILabel *contentLabel;
 @end
 
-@implementation YZTNewsRecommendFinanceCalendarCell
+@implementation YZTNewsRecommendFinanceCalendarCell3
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     

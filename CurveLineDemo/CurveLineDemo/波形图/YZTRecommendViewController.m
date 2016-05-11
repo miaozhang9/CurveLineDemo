@@ -13,7 +13,7 @@
 #import "YZTNewsRecommendHotSpotAnalysisCell.h"
 #import "YZTNewsRecommendInterestTopicCell.h"
 #import "YZTNewsRecommendTodayFortuneCell.h"
-#import "YZTNewsRecommendFinanceCalendarCell.h"
+#import "YZTNewsRecommendFinanceCalendarCell3.h"
 #import "YZTNewsRecommendNoLoginShowCell.h"
 #import "YZTNewsRecommendFinanceDynamicCell.h"
 #import "YZTNewsRecommendFinanceCalendarCell2.h"
@@ -264,11 +264,11 @@
      if (indexPath.section == 5)
  {
         
-        YZTNewsRecommendFinanceCalendarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId5"];
+        YZTNewsRecommendFinanceCalendarCell3 *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId5"];
         
         if (!cell) {
             
-            cell = [[YZTNewsRecommendFinanceCalendarCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId5"];
+            cell = [[YZTNewsRecommendFinanceCalendarCell3 alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId5"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         

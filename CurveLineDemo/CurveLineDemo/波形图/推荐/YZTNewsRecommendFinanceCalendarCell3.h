@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YZTNewsRecommendFinanceCalendarCell : UITableViewCell
+@interface YZTNewsRecommendFinanceCalendarCell3 : UITableViewCell
 
 @end

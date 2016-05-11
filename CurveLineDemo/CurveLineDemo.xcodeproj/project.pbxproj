@@ -16,7 +16,7 @@
 		1826516B1B82858900E0B94C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826516A1B82858900E0B94C /* Images.xcassets */; };
 		1826516E1B82858900E0B94C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1826516C1B82858900E0B94C /* LaunchScreen.xib */; };
 		1826517A1B82858900E0B94C /* CurveLineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182651791B82858900E0B94C /* CurveLineDemoTests.m */; };
-		18290C191CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.m */; };
+		18290C191CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m */; };
 		183E77F61C882C0C001D575E /* YZTLuJinSuoOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77EF1C882C0C001D575E /* YZTLuJinSuoOrderCell.m */; };
 		183E77F71C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F11C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m */; };
 		183E77F81C882C0C001D575E /* YZTLuJinSuoProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F31C882C0C001D575E /* YZTLuJinSuoProductCell.m */; };
@@ -85,8 +85,8 @@
 		182651731B82858900E0B94C /* CurveLineDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurveLineDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182651781B82858900E0B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182651791B82858900E0B94C /* CurveLineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurveLineDemoTests.m; sourceTree = "<group>"; };
-		18290C171CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarCell.h; sourceTree = "<group>"; };
-		18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarCell.m; sourceTree = "<group>"; };
+		18290C171CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarCell3.h; sourceTree = "<group>"; };
+		18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarCell3.m; sourceTree = "<group>"; };
 		183E77EE1C882C0C001D575E /* YZTLuJinSuoOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTLuJinSuoOrderCell.h; sourceTree = "<group>"; };
 		183E77EF1C882C0C001D575E /* YZTLuJinSuoOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTLuJinSuoOrderCell.m; sourceTree = "<group>"; };
 		183E77F01C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTLuJinSuoOrderDetailCell.h; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 				18B3F4A61CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m */,
 				18E438AF1CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.h */,
 				18E438B01CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m */,
-				18290C171CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.h */,
-				18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.m */,
+				18290C171CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.h */,
+				18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m */,
 				18932EA41CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.h */,
 				18932EA51CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m */,
 				18932EA71CE3030A00261480 /* YZTNewsRecommendButton.h */,
@@ -508,7 +508,7 @@
 				18B3F4A71CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m in Sources */,
 				18932EA61CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m in Sources */,
 				18A12F091C86C46B009F2893 /* NSArray+MASAdditions.m in Sources */,
-				18290C191CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell.m in Sources */,
+				18290C191CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m in Sources */,
 				18A12F0F1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m in Sources */,
 				18A12F0A1C86C46B009F2893 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				182651631B82858900E0B94C /* AppDelegate.m in Sources */,
