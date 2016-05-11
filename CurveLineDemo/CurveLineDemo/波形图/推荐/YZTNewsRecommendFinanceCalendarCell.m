@@ -6,12 +6,12 @@
 //  Copyright © 2016年 MZ. All rights reserved.
 //
 
-#import "YZTRecommendFinanceCalendarCell.h"
+#import "YZTNewsRecommendFinanceCalendarCell.h"
 #import "Masonry.h"
 
 static CGFloat const kBottomValueLabelWidth = 80.f;
 
-@interface YZTRecommendFinanceCalendarCell()
+@interface YZTNewsRecommendFinanceCalendarCell()
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) UIImageView *flagImageView;
 @property (nonatomic, strong) UILabel *contentLabel;
@@ -21,7 +21,7 @@ static CGFloat const kBottomValueLabelWidth = 80.f;
 @property (nonatomic, strong) UILabel *forecastValueLabel;
 @end
 
-@implementation YZTRecommendFinanceCalendarCell
+@implementation YZTNewsRecommendFinanceCalendarCell
 static inline NSAttributedString *attributeSting(NSString *text)
 {
     NSDictionary *attribute = @{NSFontAttributeName:[UIFont systemFontOfSize:13.f]};

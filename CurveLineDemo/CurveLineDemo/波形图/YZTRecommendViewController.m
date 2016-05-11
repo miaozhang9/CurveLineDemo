@@ -16,7 +16,7 @@
 #import "YZTNewsRecommendFinanceCalendarCell3.h"
 #import "YZTNewsRecommendNoLoginShowCell.h"
 #import "YZTNewsRecommendFinanceDynamicCell.h"
-#import "YZTRecommendFinanceCalendarCell.h"
+#import "YZTNewsRecommendFinanceCalendarCell.h"
 @interface YZTRecommendViewController ()<UITableViewDataSource, UITableViewDelegate,SWTableViewCellDelegate,YZTNewsRecommendFinanceDynamicCellDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong)NSMutableDictionary *selectedIndexes;
@@ -124,7 +124,7 @@
     }
     else if (indexPath.section == 7){
         
-        return [YZTRecommendFinanceCalendarCell cellHeight:_financeCalendarModel];
+        return [YZTNewsRecommendFinanceCalendarCell cellHeight:_financeCalendarModel];
     }
     
     
@@ -294,11 +294,11 @@
     if (indexPath.section == 7)
     {
         
-        YZTRecommendFinanceCalendarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId7"];
+        YZTNewsRecommendFinanceCalendarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId7"];
         
         if (!cell) {
             
-            cell = [[YZTRecommendFinanceCalendarCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId7"];
+            cell = [[YZTNewsRecommendFinanceCalendarCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId7"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         [cell updateWithModel:_financeCalendarModel];

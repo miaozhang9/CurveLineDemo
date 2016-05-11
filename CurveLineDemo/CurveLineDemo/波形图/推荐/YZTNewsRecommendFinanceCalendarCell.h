@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "YZTNewsRecommendFinanceCalendarModel.h"
-@interface YZTRecommendFinanceCalendarCell : UITableViewCell
+@interface YZTNewsRecommendFinanceCalendarCell : UITableViewCell
 - (void)updateWithModel:(id )model;
 + (CGFloat)cellHeight:(YZTNewsRecommendFinanceCalendarModel *)model;
 @end
