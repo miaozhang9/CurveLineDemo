@@ -52,7 +52,7 @@
 		18CF5AA01CE30EFA003D2DE6 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A9A1CE30EFA003D2DE6 /* SWUtilityButtonView.m */; };
 		18CF5AA31CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA21CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m */; };
 		18CF5AA61CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA51CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m */; };
-		18CF5AA91CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA81CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.m */; };
+		18CF5AA91CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA81CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.m */; };
 		18CF5AAC1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AAB1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m */; };
 		18E438B11CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E438B01CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m */; };
 /* End PBXBuildFile section */
@@ -162,8 +162,8 @@
 		18CF5AA21CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceDynamicCell.m; sourceTree = "<group>"; };
 		18CF5AA41CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceDynamicModel.h; sourceTree = "<group>"; };
 		18CF5AA51CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceDynamicModel.m; sourceTree = "<group>"; };
-		18CF5AA71CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarCell2.h; sourceTree = "<group>"; };
-		18CF5AA81CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarCell2.m; sourceTree = "<group>"; };
+		18CF5AA71CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTRecommendFinanceCalendarCell.h; sourceTree = "<group>"; };
+		18CF5AA81CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTRecommendFinanceCalendarCell.m; sourceTree = "<group>"; };
 		18CF5AAA1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarModel.h; sourceTree = "<group>"; };
 		18CF5AAB1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarModel.m; sourceTree = "<group>"; };
 		18E438AF1CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendTodayFortuneCell.h; sourceTree = "<group>"; };
@@ -216,8 +216,8 @@
 				18CF5AA21CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m */,
 				18CF5AA41CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.h */,
 				18CF5AA51CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m */,
-				18CF5AA71CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.h */,
-				18CF5AA81CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.m */,
+				18CF5AA71CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.h */,
+				18CF5AA81CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.m */,
 				18CF5AAA1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.h */,
 				18CF5AAB1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m */,
 			);
@@ -489,7 +489,7 @@
 				18A12EE21C86C0B8009F2893 /* PolicyScanModel.m in Sources */,
 				18A12EE41C86C0B8009F2893 /* StarStripesView.m in Sources */,
 				18A12F031C86C46B009F2893 /* MASCompositeConstraint.m in Sources */,
-				18CF5AA91CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell2.m in Sources */,
+				18CF5AA91CE3272B003D2DE6 /* YZTRecommendFinanceCalendarCell.m in Sources */,
 				18A12F051C86C46B009F2893 /* MASConstraintMaker.m in Sources */,
 				18932EA91CE3030A00261480 /* YZTNewsRecommendButton.m in Sources */,
 				18CCE5A91CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.m in Sources */,
