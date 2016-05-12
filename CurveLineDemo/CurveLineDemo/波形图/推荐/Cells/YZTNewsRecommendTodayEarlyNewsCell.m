@@ -12,6 +12,7 @@
 @interface YZTNewsRecommendTodayEarlyNewsCell ()
 @property (nonatomic, strong) UILabel *dateLab;
 @property (nonatomic, strong) UILabel *descLab;
+@property (nonatomic, strong) UIView *bottomLineView;
 @end
 
 @implementation YZTNewsRecommendTodayEarlyNewsCell
@@ -42,6 +43,11 @@
     [self.contentView addSubview:descLab];
 
     
+    UIView *bottomLineView = [UIView new];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    _bottomLineView = bottomLineView;
+    [self.contentView addSubview:bottomLineView];
+   
 }
 
 - (void)defineLayout {
@@ -54,9 +60,16 @@
     
     [self.dateLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(@-15);
-        make.bottom.equalTo(self.contentView.mas_bottom).offset(-15.f);
+        make.bottom.equalTo(self.bottomLineView.mas_bottom).offset(-10.f);
         make.size.mas_equalTo(CGSizeMake(150.f, 20.f));
     }];
+    [self.bottomLineView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+        make.height.equalTo(@0.5);
+    }];
+
 }
 
 - (void)awakeFromNib {

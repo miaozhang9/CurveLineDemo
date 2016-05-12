@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		181C16CD1CE05BD400180BAB /* YZTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C16CC1CE05BD400180BAB /* YZTRecommendViewController.m */; };
-		181C16D11CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C16D01CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.m */; };
-		181C16D41CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C16D31CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.m */; };
 		182651601B82858900E0B94C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1826515F1B82858900E0B94C /* main.m */; };
 		182651631B82858900E0B94C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182651621B82858900E0B94C /* AppDelegate.m */; };
 		182651691B82858900E0B94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182651671B82858900E0B94C /* Main.storyboard */; };
@@ -21,8 +19,26 @@
 		183E77F71C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F11C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m */; };
 		183E77F81C882C0C001D575E /* YZTLuJinSuoProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E77F31C882C0C001D575E /* YZTLuJinSuoProductCell.m */; };
 		184966D31B9C3B6400B51494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184966CB1B9C3B6400B51494 /* ViewController.m */; };
-		18932EA61CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18932EA51CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m */; };
-		18932EA91CE3030A00261480 /* YZTNewsRecommendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18932EA81CE3030A00261480 /* YZTNewsRecommendButton.m */; };
+		1888650B1CE41CA3005F5EEA /* YZTNewsRecommendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865081CE41CA3005F5EEA /* YZTNewsRecommendButton.m */; };
+		1888650C1CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888650A1CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.m */; };
+		1888651A1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888650F1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.m */; };
+		1888651B1CE41EB7005F5EEA /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865111CE41EB7005F5EEA /* SWCellScrollView.m */; };
+		1888651C1CE41EB7005F5EEA /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865131CE41EB7005F5EEA /* SWLongPressGestureRecognizer.m */; };
+		1888651D1CE41EB7005F5EEA /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865151CE41EB7005F5EEA /* SWTableViewCell.m */; };
+		1888651E1CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865171CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.m */; };
+		1888651F1CE41EB7005F5EEA /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865191CE41EB7005F5EEA /* SWUtilityButtonView.m */; };
+		188865391CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865221CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.m */; };
+		1888653A1CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865241CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.m */; };
+		1888653B1CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865261CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.m */; };
+		1888653C1CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865281CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.m */; };
+		1888653D1CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888652A1CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.m */; };
+		1888653E1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888652C1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.m */; };
+		1888653F1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888652E1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.m */; };
+		188865401CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865301CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.m */; };
+		188865411CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865321CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.m */; };
+		188865421CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865341CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.m */; };
+		188865431CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865361CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.m */; };
+		188865441CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188865381CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.m */; };
 		18A12EE01C86C0B8009F2893 /* InsuranceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12ED51C86C0B8009F2893 /* InsuranceModel.m */; };
 		18A12EE11C86C0B8009F2893 /* ParabolaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12ED71C86C0B8009F2893 /* ParabolaView.m */; };
 		18A12EE21C86C0B8009F2893 /* PolicyScanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12ED91C86C0B8009F2893 /* PolicyScanModel.m */; };
@@ -40,21 +56,6 @@
 		18A12F0B1C86C46B009F2893 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12EFE1C86C46B009F2893 /* View+MASAdditions.m */; };
 		18A12F0C1C86C46B009F2893 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12F011C86C46B009F2893 /* ViewController+MASAdditions.m */; };
 		18A12F0F1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12F0E1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m */; };
-		18B3F4A71CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F4A61CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m */; };
-		18B3F4AA1CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3F4A91CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.m */; };
-		18CCE5A91CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCE5A81CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.m */; };
-		18CCE5AC1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCE5AB1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.m */; };
-		18CF5A9B1CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A901CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.m */; };
-		18CF5A9C1CE30EFA003D2DE6 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A921CE30EFA003D2DE6 /* SWCellScrollView.m */; };
-		18CF5A9D1CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A941CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.m */; };
-		18CF5A9E1CE30EFA003D2DE6 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A961CE30EFA003D2DE6 /* SWTableViewCell.m */; };
-		18CF5A9F1CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A981CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.m */; };
-		18CF5AA01CE30EFA003D2DE6 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5A9A1CE30EFA003D2DE6 /* SWUtilityButtonView.m */; };
-		18CF5AA31CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA21CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m */; };
-		18CF5AA61CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA51CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m */; };
-		18CF5AA91CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AA81CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.m */; };
-		18CF5AAC1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF5AAB1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m */; };
-		18E438B11CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E438B01CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +71,6 @@
 /* Begin PBXFileReference section */
 		181C16CB1CE05BD400180BAB /* YZTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZTRecommendViewController.h; path = "波形图/YZTRecommendViewController.h"; sourceTree = "<group>"; };
 		181C16CC1CE05BD400180BAB /* YZTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZTRecommendViewController.m; path = "波形图/YZTRecommendViewController.m"; sourceTree = "<group>"; };
-		181C16CF1CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendPersonalDynamicCell.h; sourceTree = "<group>"; };
-		181C16D01CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendPersonalDynamicCell.m; sourceTree = "<group>"; };
-		181C16D21CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendTodayEarlyNewsCell.h; sourceTree = "<group>"; };
-		181C16D31CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendTodayEarlyNewsCell.m; sourceTree = "<group>"; };
 		1826515A1B82858900E0B94C /* CurveLineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurveLineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1826515E1B82858900E0B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1826515F1B82858900E0B94C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,10 +92,46 @@
 		183E77F31C882C0C001D575E /* YZTLuJinSuoProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTLuJinSuoProductCell.m; sourceTree = "<group>"; };
 		184966CA1B9C3B6400B51494 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "波形图/ViewController.h"; sourceTree = "<group>"; };
 		184966CB1B9C3B6400B51494 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "波形图/ViewController.m"; sourceTree = "<group>"; };
-		18932EA41CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendNoLoginShowCell.h; sourceTree = "<group>"; };
-		18932EA51CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendNoLoginShowCell.m; sourceTree = "<group>"; };
-		18932EA71CE3030A00261480 /* YZTNewsRecommendButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendButton.h; sourceTree = "<group>"; };
-		18932EA81CE3030A00261480 /* YZTNewsRecommendButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendButton.m; sourceTree = "<group>"; };
+		188865071CE41CA3005F5EEA /* YZTNewsRecommendButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendButton.h; sourceTree = "<group>"; };
+		188865081CE41CA3005F5EEA /* YZTNewsRecommendButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendButton.m; sourceTree = "<group>"; };
+		188865091CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendHeaderView.h; sourceTree = "<group>"; };
+		1888650A1CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendHeaderView.m; sourceTree = "<group>"; };
+		1888650E1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		1888650F1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		188865101CE41EB7005F5EEA /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
+		188865111CE41EB7005F5EEA /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
+		188865121CE41EB7005F5EEA /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		188865131CE41EB7005F5EEA /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		188865141CE41EB7005F5EEA /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		188865151CE41EB7005F5EEA /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		188865161CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		188865171CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		188865181CE41EB7005F5EEA /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
+		188865191CE41EB7005F5EEA /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
+		188865211CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarCell.h; sourceTree = "<group>"; };
+		188865221CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarCell.m; sourceTree = "<group>"; };
+		188865231CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarModel.h; sourceTree = "<group>"; };
+		188865241CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarModel.m; sourceTree = "<group>"; };
+		188865251CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceDynamicCell.h; sourceTree = "<group>"; };
+		188865261CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceDynamicCell.m; sourceTree = "<group>"; };
+		188865271CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceDynamicModel.h; sourceTree = "<group>"; };
+		188865281CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceDynamicModel.m; sourceTree = "<group>"; };
+		188865291CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendHotSpotAnalysisCell.h; sourceTree = "<group>"; };
+		1888652A1CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendHotSpotAnalysisCell.m; sourceTree = "<group>"; };
+		1888652B1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendInterestTopicBottomView.h; sourceTree = "<group>"; };
+		1888652C1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendInterestTopicBottomView.m; sourceTree = "<group>"; };
+		1888652D1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendInterestTopicCell.h; sourceTree = "<group>"; };
+		1888652E1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendInterestTopicCell.m; sourceTree = "<group>"; };
+		1888652F1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendInterestTopicOtherView.h; sourceTree = "<group>"; };
+		188865301CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendInterestTopicOtherView.m; sourceTree = "<group>"; };
+		188865311CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendNoLoginShowCell.h; sourceTree = "<group>"; };
+		188865321CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendNoLoginShowCell.m; sourceTree = "<group>"; };
+		188865331CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendPersonalDynamicCell.h; sourceTree = "<group>"; };
+		188865341CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendPersonalDynamicCell.m; sourceTree = "<group>"; };
+		188865351CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendTodayEarlyNewsCell.h; sourceTree = "<group>"; };
+		188865361CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendTodayEarlyNewsCell.m; sourceTree = "<group>"; };
+		188865371CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendTodayFortuneCell.h; sourceTree = "<group>"; };
+		188865381CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendTodayFortuneCell.m; sourceTree = "<group>"; };
 		18A12ED41C86C0B8009F2893 /* InsuranceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuranceModel.h; sourceTree = "<group>"; };
 		18A12ED51C86C0B8009F2893 /* InsuranceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuranceModel.m; sourceTree = "<group>"; };
 		18A12ED61C86C0B8009F2893 /* ParabolaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParabolaView.h; sourceTree = "<group>"; };
@@ -138,36 +171,6 @@
 		18A12F011C86C46B009F2893 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		18A12F0D1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZTLuJinSuoProductListViewController.h; path = "波形图/陆金所/YZTLuJinSuoProductListViewController.h"; sourceTree = "<group>"; };
 		18A12F0E1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZTLuJinSuoProductListViewController.m; path = "波形图/陆金所/YZTLuJinSuoProductListViewController.m"; sourceTree = "<group>"; };
-		18B3F4A51CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendInterestTopicOtherView.h; sourceTree = "<group>"; };
-		18B3F4A61CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendInterestTopicOtherView.m; sourceTree = "<group>"; };
-		18B3F4A81CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendInterestTopicBottomView.h; sourceTree = "<group>"; };
-		18B3F4A91CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendInterestTopicBottomView.m; sourceTree = "<group>"; };
-		18CCE5A71CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendHotSpotAnalysisCell.h; sourceTree = "<group>"; };
-		18CCE5A81CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendHotSpotAnalysisCell.m; sourceTree = "<group>"; };
-		18CCE5AA1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendInterestTopicCell.h; sourceTree = "<group>"; };
-		18CCE5AB1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendInterestTopicCell.m; sourceTree = "<group>"; };
-		18CF5A8F1CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
-		18CF5A901CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
-		18CF5A911CE30EFA003D2DE6 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
-		18CF5A921CE30EFA003D2DE6 /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
-		18CF5A931CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
-		18CF5A941CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
-		18CF5A951CE30EFA003D2DE6 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
-		18CF5A961CE30EFA003D2DE6 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
-		18CF5A971CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
-		18CF5A981CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
-		18CF5A991CE30EFA003D2DE6 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
-		18CF5A9A1CE30EFA003D2DE6 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
-		18CF5AA11CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceDynamicCell.h; sourceTree = "<group>"; };
-		18CF5AA21CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceDynamicCell.m; sourceTree = "<group>"; };
-		18CF5AA41CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceDynamicModel.h; sourceTree = "<group>"; };
-		18CF5AA51CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceDynamicModel.m; sourceTree = "<group>"; };
-		18CF5AA71CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarCell.h; sourceTree = "<group>"; };
-		18CF5AA81CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarCell.m; sourceTree = "<group>"; };
-		18CF5AAA1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendFinanceCalendarModel.h; sourceTree = "<group>"; };
-		18CF5AAB1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendFinanceCalendarModel.m; sourceTree = "<group>"; };
-		18E438AF1CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTNewsRecommendTodayFortuneCell.h; sourceTree = "<group>"; };
-		18E438B01CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTNewsRecommendTodayFortuneCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,35 +194,10 @@
 		181C16CE1CE05DAA00180BAB /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
-				18CF5A8E1CE30EFA003D2DE6 /* PodFiles */,
-				181C16CF1CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.h */,
-				181C16D01CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.m */,
-				181C16D21CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.h */,
-				181C16D31CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.m */,
-				18CCE5A71CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.h */,
-				18CCE5A81CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.m */,
-				18CCE5AA1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.h */,
-				18CCE5AB1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.m */,
-				18B3F4A81CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.h */,
-				18B3F4A91CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.m */,
-				18B3F4A51CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.h */,
-				18B3F4A61CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m */,
-				18E438AF1CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.h */,
-				18E438B01CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m */,
+				188865061CE41CA3005F5EEA /* CustomView */,
+				188865201CE41F40005F5EEA /* Cells */,
 				18290C171CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.h */,
 				18290C181CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m */,
-				18932EA41CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.h */,
-				18932EA51CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m */,
-				18932EA71CE3030A00261480 /* YZTNewsRecommendButton.h */,
-				18932EA81CE3030A00261480 /* YZTNewsRecommendButton.m */,
-				18CF5AA11CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.h */,
-				18CF5AA21CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m */,
-				18CF5AA41CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.h */,
-				18CF5AA51CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m */,
-				18CF5AA71CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.h */,
-				18CF5AA81CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.m */,
-				18CF5AAA1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.h */,
-				18CF5AAB1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m */,
 			);
 			name = "推荐";
 			path = "波形图/推荐";
@@ -292,6 +270,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		188865061CE41CA3005F5EEA /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1888650D1CE41EB7005F5EEA /* SwipeCell */,
+				188865071CE41CA3005F5EEA /* YZTNewsRecommendButton.h */,
+				188865081CE41CA3005F5EEA /* YZTNewsRecommendButton.m */,
+				188865091CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.h */,
+				1888650A1CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		1888650D1CE41EB7005F5EEA /* SwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1888650E1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.h */,
+				1888650F1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.m */,
+				188865101CE41EB7005F5EEA /* SWCellScrollView.h */,
+				188865111CE41EB7005F5EEA /* SWCellScrollView.m */,
+				188865121CE41EB7005F5EEA /* SWLongPressGestureRecognizer.h */,
+				188865131CE41EB7005F5EEA /* SWLongPressGestureRecognizer.m */,
+				188865141CE41EB7005F5EEA /* SWTableViewCell.h */,
+				188865151CE41EB7005F5EEA /* SWTableViewCell.m */,
+				188865161CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.h */,
+				188865171CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.m */,
+				188865181CE41EB7005F5EEA /* SWUtilityButtonView.h */,
+				188865191CE41EB7005F5EEA /* SWUtilityButtonView.m */,
+			);
+			path = SwipeCell;
+			sourceTree = "<group>";
+		};
+		188865201CE41F40005F5EEA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				188865311CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.h */,
+				188865321CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.m */,
+				188865331CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.h */,
+				188865341CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.m */,
+				188865351CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.h */,
+				188865361CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.m */,
+				1888652D1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.h */,
+				1888652E1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.m */,
+				1888652B1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.h */,
+				1888652C1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.m */,
+				1888652F1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.h */,
+				188865301CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.m */,
+				188865291CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.h */,
+				1888652A1CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.m */,
+				188865251CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.h */,
+				188865261CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.m */,
+				188865371CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.h */,
+				188865381CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.m */,
+				188865211CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.h */,
+				188865221CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.m */,
+				188865231CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.h */,
+				188865241CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.m */,
+				188865271CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.h */,
+				188865281CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		18A12ED31C86C0B8009F2893 /* 峰型流动图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,25 +396,6 @@
 				18A12F011C86C46B009F2893 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		18CF5A8E1CE30EFA003D2DE6 /* PodFiles */ = {
-			isa = PBXGroup;
-			children = (
-				18CF5A8F1CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.h */,
-				18CF5A901CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.m */,
-				18CF5A911CE30EFA003D2DE6 /* SWCellScrollView.h */,
-				18CF5A921CE30EFA003D2DE6 /* SWCellScrollView.m */,
-				18CF5A931CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.h */,
-				18CF5A941CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.m */,
-				18CF5A951CE30EFA003D2DE6 /* SWTableViewCell.h */,
-				18CF5A961CE30EFA003D2DE6 /* SWTableViewCell.m */,
-				18CF5A971CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.h */,
-				18CF5A981CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.m */,
-				18CF5A991CE30EFA003D2DE6 /* SWUtilityButtonView.h */,
-				18CF5A9A1CE30EFA003D2DE6 /* SWUtilityButtonView.m */,
-			);
-			path = PodFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,50 +498,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181C16D41CE079C300180BAB /* YZTNewsRecommendTodayEarlyNewsCell.m in Sources */,
-				18E438B11CE09D9600835580 /* YZTNewsRecommendTodayFortuneCell.m in Sources */,
 				18A12F081C86C46B009F2893 /* MASViewConstraint.m in Sources */,
+				1888653F1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicCell.m in Sources */,
 				18A12EE01C86C0B8009F2893 /* InsuranceModel.m in Sources */,
 				183E77F71C882C0C001D575E /* YZTLuJinSuoOrderDetailCell.m in Sources */,
 				18A12F071C86C46B009F2893 /* MASViewAttribute.m in Sources */,
 				184966D31B9C3B6400B51494 /* ViewController.m in Sources */,
-				18CF5A9E1CE30EFA003D2DE6 /* SWTableViewCell.m in Sources */,
-				18CF5AA61CE3211D003D2DE6 /* YZTNewsRecommendFinanceDynamicModel.m in Sources */,
+				1888651B1CE41EB7005F5EEA /* SWCellScrollView.m in Sources */,
+				188865411CE41F40005F5EEA /* YZTNewsRecommendNoLoginShowCell.m in Sources */,
+				1888651D1CE41EB7005F5EEA /* SWTableViewCell.m in Sources */,
 				18A12EE21C86C0B8009F2893 /* PolicyScanModel.m in Sources */,
+				1888650C1CE41CA3005F5EEA /* YZTNewsRecommendHeaderView.m in Sources */,
 				18A12EE41C86C0B8009F2893 /* StarStripesView.m in Sources */,
 				18A12F031C86C46B009F2893 /* MASCompositeConstraint.m in Sources */,
-				18CF5AA91CE3272B003D2DE6 /* YZTNewsRecommendFinanceCalendarCell.m in Sources */,
 				18A12F051C86C46B009F2893 /* MASConstraintMaker.m in Sources */,
-				18932EA91CE3030A00261480 /* YZTNewsRecommendButton.m in Sources */,
-				18CCE5A91CE0853600C94F72 /* YZTNewsRecommendHotSpotAnalysisCell.m in Sources */,
-				18CF5AA31CE31C46003D2DE6 /* YZTNewsRecommendFinanceDynamicCell.m in Sources */,
+				188865391CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarCell.m in Sources */,
+				1888653C1CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicModel.m in Sources */,
 				18A12F0B1C86C46B009F2893 /* View+MASAdditions.m in Sources */,
 				18A12F061C86C46B009F2893 /* MASLayoutConstraint.m in Sources */,
 				18A12F0C1C86C46B009F2893 /* ViewController+MASAdditions.m in Sources */,
+				1888653E1CE41F40005F5EEA /* YZTNewsRecommendInterestTopicBottomView.m in Sources */,
+				188865431CE41F40005F5EEA /* YZTNewsRecommendTodayEarlyNewsCell.m in Sources */,
 				18A12F041C86C46B009F2893 /* MASConstraint.m in Sources */,
+				188865421CE41F40005F5EEA /* YZTNewsRecommendPersonalDynamicCell.m in Sources */,
+				1888651F1CE41EB7005F5EEA /* SWUtilityButtonView.m in Sources */,
 				183E77F81C882C0C001D575E /* YZTLuJinSuoProductCell.m in Sources */,
-				18CF5A9F1CE30EFA003D2DE6 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
+				188865441CE41F40005F5EEA /* YZTNewsRecommendTodayFortuneCell.m in Sources */,
 				18A12EE11C86C0B8009F2893 /* ParabolaView.m in Sources */,
-				181C16D11CE05E4D00180BAB /* YZTNewsRecommendPersonalDynamicCell.m in Sources */,
 				183E77F61C882C0C001D575E /* YZTLuJinSuoOrderCell.m in Sources */,
-				18CF5A9C1CE30EFA003D2DE6 /* SWCellScrollView.m in Sources */,
 				18A12EE51C86C0B8009F2893 /* WaveScaleView.m in Sources */,
-				18B3F4A71CE1D070002D9726 /* YZTNewsRecommendInterestTopicOtherView.m in Sources */,
-				18932EA61CE2E33800261480 /* YZTNewsRecommendNoLoginShowCell.m in Sources */,
+				1888651A1CE41EB7005F5EEA /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				1888651E1CE41EB7005F5EEA /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
+				1888651C1CE41EB7005F5EEA /* SWLongPressGestureRecognizer.m in Sources */,
 				18A12F091C86C46B009F2893 /* NSArray+MASAdditions.m in Sources */,
+				1888653B1CE41F40005F5EEA /* YZTNewsRecommendFinanceDynamicCell.m in Sources */,
 				18290C191CE1BAB5006F9DDD /* YZTNewsRecommendFinanceCalendarCell3.m in Sources */,
 				18A12F0F1C86C4D5009F2893 /* YZTLuJinSuoProductListViewController.m in Sources */,
 				18A12F0A1C86C46B009F2893 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				1888653A1CE41F40005F5EEA /* YZTNewsRecommendFinanceCalendarModel.m in Sources */,
 				182651631B82858900E0B94C /* AppDelegate.m in Sources */,
+				1888650B1CE41CA3005F5EEA /* YZTNewsRecommendButton.m in Sources */,
 				18A12EE31C86C0B8009F2893 /* PolicyScanTopView.m in Sources */,
-				18CCE5AC1CE08E5400C94F72 /* YZTNewsRecommendInterestTopicCell.m in Sources */,
-				18CF5A9B1CE30EFA003D2DE6 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				1888653D1CE41F40005F5EEA /* YZTNewsRecommendHotSpotAnalysisCell.m in Sources */,
 				182651601B82858900E0B94C /* main.m in Sources */,
+				188865401CE41F40005F5EEA /* YZTNewsRecommendInterestTopicOtherView.m in Sources */,
 				181C16CD1CE05BD400180BAB /* YZTRecommendViewController.m in Sources */,
-				18CF5AA01CE30EFA003D2DE6 /* SWUtilityButtonView.m in Sources */,
-				18B3F4AA1CE1DA3E002D9726 /* YZTNewsRecommendInterestTopicBottomView.m in Sources */,
-				18CF5AAC1CE32966003D2DE6 /* YZTNewsRecommendFinanceCalendarModel.m in Sources */,
-				18CF5A9D1CE30EFA003D2DE6 /* SWLongPressGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

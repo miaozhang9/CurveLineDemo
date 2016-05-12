@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIButton *loginButton;
 ///不再提示
 @property (nonatomic, strong) UIButton *hintButton;
+@property (nonatomic, strong) UIView *bottomLineView;
 @end
 
 @implementation YZTNewsRecommendNoLoginShowCell
@@ -33,7 +34,7 @@
 
 - (void)initSubViews {
     UILabel *contentLabel = [UILabel new];
-    contentLabel.text = @"想获得更加智能的投资决策辅助建议吗?请登录APP体验更佳便捷个性化数据服务吧";
+    contentLabel.text = @"  想获得更加智能的投资决策辅助建议吗?\n请登录APP体验更佳便捷个性化数据服务吧";
     contentLabel.textAlignment = NSTextAlignmentCenter;
     contentLabel.numberOfLines = 2;
     contentLabel.font = [UIFont systemFontOfSize:16.f];
@@ -56,6 +57,13 @@
     [hintButton setTitle:@"不再提醒" forState:UIControlStateNormal];
     _hintButton = hintButton;
     [self.contentView addSubview:hintButton];
+    
+    UIView *bottomLineView = [UIView new];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    _bottomLineView = bottomLineView;
+    [self.contentView addSubview:bottomLineView];
+   
+
 }
 
 - (void)defineLayout {
@@ -67,14 +75,22 @@
     }];
     
     [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(100.f);
+        make.centerX.equalTo(self.contentView.mas_centerX).offset(-50);
+//        make.left.equalTo(self.contentView).offset(100.f);
         make.top.equalTo(self.contentLabel.mas_bottom).offset(20.f);
         make.size.mas_equalTo(CGSizeMake(80, 30));
     }];
     
     [self.hintButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.contentView).offset(-100.f);
+        make.left.equalTo(self.loginButton.mas_right).offset(20.f);
         make.size.and.top.equalTo(self.loginButton);
+    }];
+    
+    [self.bottomLineView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+        make.height.equalTo(@0.5);
     }];
 }
 - (void)awakeFromNib {

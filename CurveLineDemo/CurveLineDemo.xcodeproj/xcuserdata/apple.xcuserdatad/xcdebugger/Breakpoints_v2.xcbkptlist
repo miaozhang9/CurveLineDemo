@@ -162,11 +162,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CurveLineDemo/&#x6ce2;&#x5f62;&#x56fe;/YZTRecommendViewController.m"
-            timestampString = "484649842.645777"
+            timestampString = "484710864.128447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-tableView:heightForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -194,28 +194,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CurveLineDemo/&#x6ce2;&#x5f62;&#x56fe;/&#x63a8;&#x8350;/YZTNewsRecommendInterestTopicCell.m"
-            timestampString = "484627105.281526"
+            timestampString = "484656125.74297"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "-awakeFromNib"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CurveLineDemo/&#x6ce2;&#x5f62;&#x56fe;/YZTRecommendViewController.m"
-            timestampString = "484649842.645777"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

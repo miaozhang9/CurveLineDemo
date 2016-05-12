@@ -14,7 +14,7 @@ typedef void (^ClickChangeBlock)(id object);
 @interface YZTNewsRecommendInterestTopicCell : UITableViewCell
 
 @property (nonatomic, copy) ClickChangeBlock clickChangeBlock;
-- (void)cellShow;
+
 
 @property (nonatomic,strong) YZTNewsRecommendInterestTopicBottomView *topicBottomView;;
 @end

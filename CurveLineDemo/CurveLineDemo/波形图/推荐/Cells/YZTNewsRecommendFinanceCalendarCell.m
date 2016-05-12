@@ -68,7 +68,7 @@ static inline NSAttributedString *attributeSting(NSString *text)
     if (model.currentValue.length > 0 || model.previousValue.length > 0 || model.forecastValue.length > 0) {
         height += 11.f;
     }
-    height += 5.f;
+    height += 10.f;
     return height;
 }
 
@@ -114,8 +114,8 @@ static inline NSAttributedString *attributeSting(NSString *text)
     
    
     [self.currentValueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(@20);
-        make.top.equalTo(self.contentLabel.mas_bottom).offset(5.f);
+        make.leading.equalTo(self.contentLabel.mas_leading);
+        make.top.equalTo(self.contentLabel.mas_bottom).offset(10.f);
         make.width.equalTo(@(kBottomValueLabelWidth));
     }];
     

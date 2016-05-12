@@ -17,9 +17,32 @@
 #import "YZTNewsRecommendNoLoginShowCell.h"
 #import "YZTNewsRecommendFinanceDynamicCell.h"
 #import "YZTNewsRecommendFinanceCalendarCell.h"
+#import "YZTNewsRecommendHeaderView.h"
+
+static NSString * const PersonalDynamicCellIdentifier = @"YZTNewsRecommendPersonalDynamicCell";
+static NSString * const NoLoginShowCellIdentifier = @"YZTNewsRecommendNoLoginShowCell";
+static NSString * const TodayEarlyNewsCellIdentifier = @"YZTNewsRecommendTodayEarlyNewsCell";
+static NSString * const InterestTopicCellIdentifier = @"YZTNewsRecommendInterestTopicCell";
+static NSString * const HotSpotAnalysisCellIdentifier = @"YZTNewsRecommendHotSpotAnalysisCell";
+static NSString * const FinanceDynamicCellIdentifier = @"YZTNewsRecommendFinanceDynamicCell";
+static NSString * const TodayFortuneCellIdentifier = @"YZTNewsRecommendTodayFortuneCell";
+static NSString * const FinanceCalendarCellIdentifier = @"YZTNewsRecommendFinanceCalendarCell";
+
+
+typedef NS_ENUM(NSInteger, InvestmentSectionType) {
+    PersonalDynamicSection = 0,//最新个人动态
+    TodayEarlyNewsSection = 1,//今日早报
+    InterestTopicSection  = 2,//感兴趣的话题
+    HotSpotAnalysisSection = 3,//热点分析
+    FinanceDynamicSection = 4,//财经动态
+    TodayFortuneSection = 5,//今日运势
+    FinanceCalendarSection = 6,//财经日历
+};
+
 @interface YZTRecommendViewController ()<UITableViewDataSource, UITableViewDelegate,SWTableViewCellDelegate,YZTNewsRecommendFinanceDynamicCellDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong)NSMutableDictionary *selectedIndexes;
+///临时测试数据
 @property (nonatomic, assign)BOOL isLogin;
 @property (nonatomic, strong)YZTNewsRecommendFinanceDynamicModel *financeDynamicModel;
 @property (nonatomic, strong)YZTNewsRecommendFinanceCalendarModel *financeCalendarModel;
@@ -32,11 +55,11 @@
     // Do any additional setup after loading the view.
     _selectedIndexes = [NSMutableDictionary new];
     [self getData];
-
+    _isLogin = NO;
     [self addSubviews];
     [self defineLayout];
 }
-
+///临时测试数据
 - (void)getData{
 
     _financeDynamicModel = [YZTNewsRecommendFinanceDynamicModel new];
@@ -54,11 +77,7 @@
     model.content = @"你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好";
     _financeCalendarModel = model;
 }
-- (BOOL)cellIsSelected:(NSIndexPath *)indexPath {
-    NSNumber *selectedIndex = [self.selectedIndexes objectForKey:indexPath];
-    return selectedIndex == nil ? FALSE :[selectedIndex boolValue];
-    
-}
+
 - (void)addSubviews {
     
     if (!_tableView) {
@@ -66,9 +85,8 @@
         //    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView setDelegate:self];
         [_tableView setDataSource:self];
-        [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+        [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         [self.view addSubview:_tableView];
-        _tableView.separatorInset = UIEdgeInsetsMake(0, 50, 0, 0);
 //        [_tableView registerClass:[YZTNewsRecommendInterestTopicCell class] forCellReuseIdentifier:@"YZTNewsRecommendInterestTopicCell"];
         }
     
@@ -84,58 +102,70 @@
     }];
 }
 
-
+- (BOOL)cellIsSelected:(NSIndexPath *)indexPath {
+    NSNumber *selectedIndex = [self.selectedIndexes objectForKey:indexPath];
+    return selectedIndex == nil ? FALSE :[selectedIndex boolValue];
+    
+}
 
 #pragma mark -- UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 30.0f;
+    return 44.f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    
-    if (indexPath.section == 0) {
-        return 160;
-    }else if (indexPath.section == 1){
-        return 125;
-    }else if (indexPath.section == 2){
-        return 112;
-    }else if (indexPath.section == 3){
 
-        if ([self cellIsSelected:indexPath]) {
-
-            return 150 + 64*3;
-        }else{
-            return 150;
-        }
-
+    switch (indexPath.section) {
+        case PersonalDynamicSection:
+            return 160.f;
+            break;
+            
+        case TodayEarlyNewsSection:
+            return 125.f;
+            break;
+        case InterestTopicSection:
+            if ([self cellIsSelected:indexPath]) {
+                
+                return 150 + 64*3;
+            }else{
+                return 150;
+            }
+            break;
+        case HotSpotAnalysisSection:
+             return 112.f;
+            break;
+        case FinanceDynamicSection:
+            return  [YZTNewsRecommendFinanceDynamicCell cellHeight:_financeDynamicModel];
+            break;
+        case TodayFortuneSection:
+             return 180;
+            break;
+        case FinanceCalendarSection:
+            return [YZTNewsRecommendFinanceCalendarCell cellHeight:_financeCalendarModel];
+            break;
+        default:
+            return 0;
+            break;
     }
-    else if (indexPath.section == 4){
-        return 180;
-    }
-    else if (indexPath.section == 5){
-        return 80;
-    }else if (indexPath.section == 6){
-        
-        return [YZTNewsRecommendFinanceDynamicCell cellHeight:_financeDynamicModel];
-    }
-    else if (indexPath.section == 7){
-        
-        return [YZTNewsRecommendFinanceCalendarCell cellHeight:_financeCalendarModel];
-    }
-    
-    
-    else {
-        return 0;
-    }
+  
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 0.01;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    YZTNewsRecommendHeaderView *topHeaderView = [[YZTNewsRecommendHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, 44)];
+    topHeaderView.headerNameLabel.text = @[@"最新的个人动态",@"您必须知道的今日早报",@"您可能会感兴趣的话题",@"值得您一读的热点分析",@"财经动态",@"今日运势",@"最新财经日历"][section];
+    
+    return topHeaderView;
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -146,9 +176,11 @@
 #pragma mark - DataSource
 
 #pragma mark -- UITableViewDataSource
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 8;
+    return 7;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -158,155 +190,153 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if (indexPath.section == 0) {
-        
-        if (_isLogin) {
-            YZTNewsRecommendPersonalDynamicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId0"];
+    switch (indexPath.section) {
+        case PersonalDynamicSection:
+            if (_isLogin) {
+                YZTNewsRecommendPersonalDynamicCell *cell = [tableView dequeueReusableCellWithIdentifier:PersonalDynamicCellIdentifier];
+                
+                if (!cell) {
+                    
+                    cell = [[YZTNewsRecommendPersonalDynamicCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:PersonalDynamicCellIdentifier];
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                }
+                
+                
+                return cell;
+                
+            }else{
+                
+                YZTNewsRecommendNoLoginShowCell *cell = [tableView dequeueReusableCellWithIdentifier:NoLoginShowCellIdentifier];
+                
+                if (!cell) {
+                    
+                    cell = [[YZTNewsRecommendNoLoginShowCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:NoLoginShowCellIdentifier];
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                }
+                
+                
+                return cell;
+                
+            }
+            
+
+            break;
+            
+        case TodayEarlyNewsSection:
+        {
+            YZTNewsRecommendTodayEarlyNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:TodayEarlyNewsCellIdentifier];
             
             if (!cell) {
                 
-                cell = [[YZTNewsRecommendPersonalDynamicCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId0"];
+                cell = [[YZTNewsRecommendTodayEarlyNewsCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:TodayEarlyNewsCellIdentifier];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
             
+           
+            [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
+            cell.delegate = self;
+       
+        return cell;
+        }
+            break;
+        case InterestTopicSection:
+        {
+            YZTNewsRecommendInterestTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:InterestTopicCellIdentifier];
+            
+            if (!cell) {
+                
+                cell = [[YZTNewsRecommendInterestTopicCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:InterestTopicCellIdentifier];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            }
+            ///临时写法
+            if ([self cellIsSelected:indexPath]) {
+                cell.topicBottomView.hidden = NO;
+            }else{
+                cell.topicBottomView.hidden = YES;
+            }
+            [cell setClickChangeBlock:^(id sender){
+                
+                NSIndexPath *selectIndexPath = [self.tableView indexPathForCell:sender];
+                BOOL isSelected = ![self cellIsSelected:selectIndexPath];
+                NSNumber *selectIndex = [NSNumber numberWithBool:isSelected];
+                [self.selectedIndexes setObject:selectIndex forKey:selectIndexPath];
+                [self.tableView reloadRowsAtIndexPaths:@[selectIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+                
+                
+            }];
+            return cell;
+
+        }
+            break;
+        case HotSpotAnalysisSection:
+        {
+            YZTNewsRecommendHotSpotAnalysisCell *cell = [tableView dequeueReusableCellWithIdentifier:HotSpotAnalysisCellIdentifier];
+            
+            if (!cell) {
+                
+                cell = [[YZTNewsRecommendHotSpotAnalysisCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:HotSpotAnalysisCellIdentifier];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            }
+            
+            
+            return cell;
+        
+        }
+            break;
+        case FinanceDynamicSection:
+        {
+            
+            YZTNewsRecommendFinanceDynamicCell *cell = [tableView dequeueReusableCellWithIdentifier:FinanceDynamicCellIdentifier];
+            
+            if (!cell) {
+                
+                cell = [[YZTNewsRecommendFinanceDynamicCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:FinanceDynamicCellIdentifier];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            }
+            
+            cell.delegate = self;
+            cell.line01.hidden = indexPath.row == 0;
+            [cell updateWithModel:_financeDynamicModel];
             
             return cell;
 
-        }else{
-            
-            YZTNewsRecommendNoLoginShowCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YZTNewsRecommendNoLoginShowCell"];
+        }
+            break;
+        case TodayFortuneSection:
+        {
+            YZTNewsRecommendTodayFortuneCell *cell = [tableView dequeueReusableCellWithIdentifier:TodayFortuneCellIdentifier];
             
             if (!cell) {
                 
-                cell = [[YZTNewsRecommendNoLoginShowCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"YZTNewsRecommendNoLoginShowCell"];
+                cell = [[YZTNewsRecommendTodayFortuneCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:TodayFortuneCellIdentifier];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
             
             
             return cell;
-        
         }
-        
-        
-    }
-    if (indexPath.section == 1) {
-        YZTNewsRecommendTodayEarlyNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId1"];
-        
-        if (!cell) {
+            break;
+        case FinanceCalendarSection:
+        {
+            YZTNewsRecommendFinanceCalendarCell *cell = [tableView dequeueReusableCellWithIdentifier:FinanceCalendarCellIdentifier];
             
-            cell = [[YZTNewsRecommendTodayEarlyNewsCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId1"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        
-        [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:32.0f];
-        [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
-        cell.delegate = self;
-        
-        return cell;
-    }
-    
-    if (indexPath.section == 2) {
-        
-        YZTNewsRecommendHotSpotAnalysisCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"cellId2"];
-        
-        if (!cell2) {
+            if (!cell) {
+                
+                cell = [[YZTNewsRecommendFinanceCalendarCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:FinanceCalendarCellIdentifier];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            }
+            [cell updateWithModel:_financeCalendarModel];
             
-            cell2 = [[YZTNewsRecommendHotSpotAnalysisCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId2"];
-            cell2.selectionStyle = UITableViewCellSelectionStyleNone;
+            return cell;
+        
         }
-        
-        
-        return cell2;
+            break;
+        default:
+            return nil;
+            break;
     }
-    if (indexPath.section == 3) {
-        
-      
-        YZTNewsRecommendInterestTopicCell *cell3 = [tableView dequeueReusableCellWithIdentifier:@"YZTNewsRecommendInterestTopicCell"];
-        
-        if (!cell3) {
-            
-            cell3 = [[YZTNewsRecommendInterestTopicCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YZTNewsRecommendInterestTopicCell"];
-            cell3.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-       
-        if ([self cellIsSelected:indexPath]) {
-            cell3.topicBottomView.hidden = NO;
-        }else{
-            cell3.topicBottomView.hidden = YES;
-        }
-        [cell3 setClickChangeBlock:^(id sender){
-            
-            NSIndexPath *selectIndexPath = [self.tableView indexPathForCell:sender];
-            BOOL isSelected = ![self cellIsSelected:selectIndexPath];
-            NSNumber *selectIndex = [NSNumber numberWithBool:isSelected];
-            [self.selectedIndexes setObject:selectIndex forKey:selectIndexPath];
-            [self.tableView reloadRowsAtIndexPaths:@[selectIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-          
-          
-        }];
-        
-        
-           return cell3;
-    }
-    if (indexPath.section == 4) {
-        
-        YZTNewsRecommendTodayFortuneCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId4"];
-        
-        if (!cell) {
-            
-            cell = [[YZTNewsRecommendTodayFortuneCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId4"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        
-        
-        return cell;
-    }
-     if (indexPath.section == 5)
- {
-        
-        YZTNewsRecommendFinanceCalendarCell3 *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId5"];
-        
-        if (!cell) {
-            
-            cell = [[YZTNewsRecommendFinanceCalendarCell3 alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId5"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        
-        
-        return cell;
-    }
-    if (indexPath.section == 6)
-    {
-        
-        YZTNewsRecommendFinanceDynamicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId6"];
-        
-        if (!cell) {
-            
-            cell = [[YZTNewsRecommendFinanceDynamicCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId6"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        
-        cell.delegate = self;
-         [cell updateWithModel:_financeDynamicModel];
-        
-        return cell;
-    }
-    if (indexPath.section == 7)
-    {
-        
-        YZTNewsRecommendFinanceCalendarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId7"];
-        
-        if (!cell) {
-            
-            cell = [[YZTNewsRecommendFinanceCalendarCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId7"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        [cell updateWithModel:_financeCalendarModel];
-        
-        return cell;
-    }
-    
-    
+
+
     
     return nil;
 }
@@ -320,33 +350,33 @@
     NSMutableArray *rightUtilityButtons = [NSMutableArray new];
     [rightUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                title:@"More"];
+                                                title:@"不再\n订阅"];
     [rightUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:1.0f green:0.231f blue:0.188 alpha:1.0f]
-                                                title:@"Delete"];
+                                                title:@"不再\n显示"];
     
     return rightUtilityButtons;
 }
-
-- (NSArray *)leftButtons
-{
-    NSMutableArray *leftUtilityButtons = [NSMutableArray new];
-    
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:0.07 green:0.75f blue:0.16f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"check.png"]];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"clock.png"]];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:0.231f blue:0.188f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"cross.png"]];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:0.55f green:0.27f blue:0.07f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"list.png"]];
-    
-    return leftUtilityButtons;
-}
+//
+//- (NSArray *)leftButtons
+//{
+//    NSMutableArray *leftUtilityButtons = [NSMutableArray new];
+//    
+//    [leftUtilityButtons sw_addUtilityButtonWithColor:
+//     [UIColor colorWithRed:0.07 green:0.75f blue:0.16f alpha:1.0]
+//                                                icon:[UIImage imageNamed:@"check.png"]];
+//    [leftUtilityButtons sw_addUtilityButtonWithColor:
+//     [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:1.0]
+//                                                icon:[UIImage imageNamed:@"clock.png"]];
+//    [leftUtilityButtons sw_addUtilityButtonWithColor:
+//     [UIColor colorWithRed:1.0f green:0.231f blue:0.188f alpha:1.0]
+//                                                icon:[UIImage imageNamed:@"cross.png"]];
+//    [leftUtilityButtons sw_addUtilityButtonWithColor:
+//     [UIColor colorWithRed:0.55f green:0.27f blue:0.07f alpha:1.0]
+//                                                icon:[UIImage imageNamed:@"list.png"]];
+//    
+//    return leftUtilityButtons;
+//}
 
 
 #pragma mark - SWTableViewDelegate

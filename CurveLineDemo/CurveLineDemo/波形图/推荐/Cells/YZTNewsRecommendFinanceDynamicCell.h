@@ -16,6 +16,7 @@
 @end
 
 @interface YZTNewsRecommendFinanceDynamicCell : UITableViewCell
+@property (nonatomic, strong) UIView *line01;
 @property (nonatomic, weak) id <YZTNewsRecommendFinanceDynamicCellDelegate> delegate;;
 
 - (void)updateWithModel:(id )model;

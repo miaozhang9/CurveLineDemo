@@ -16,7 +16,7 @@ static CGFloat const kImageDefaultHeight = 64.f;//图片默认高度
 static CGFloat const kImageViewMargin = 5.f;//图片间隔
 
 @interface YZTNewsRecommendFinanceDynamicCell ()
-@property (nonatomic, strong) UIView *line01;
+
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UILabel *dateLabel;
 @property (nonatomic, strong) UILabel *contentLabel;
@@ -129,6 +129,7 @@ static inline NSAttributedString *attributeSting(NSString *text)
 {
     if (!_expandBtn) {
         _expandBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _expandBtn.titleLabel.font = [UIFont systemFontOfSize:14.f];
 //        _expandBtn.titleLabel.font = YZTFont(14.f);
         [_expandBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_expandBtn addTarget:self action:@selector(expandBtnActionEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -225,7 +226,7 @@ static inline NSAttributedString *attributeSting(NSString *text)
         height += (kImageDefaultHeight + kImageViewMargin) *model.imageUrls.count;
         height += 5.f;
     }
-    height += 15.f;//底部空隙
+    height += 10.f;//底部空隙
     return height;
 }
 

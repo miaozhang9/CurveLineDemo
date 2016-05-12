@@ -21,6 +21,8 @@
 @property (nonatomic, strong) UIButton *topRightButton;
 @property (nonatomic, strong) UIButton *leftButton;
 @property (nonatomic, strong) UIButton *rightButton;
+
+@property (nonatomic, strong) UIView *bottomLineView;
 @end
 
 @implementation YZTNewsRecommendPersonalDynamicCell
@@ -81,6 +83,11 @@
     _rightButton = rightButton;
     [self.contentView addSubview:rightButton];
     
+    UIView *bottomLineView = [UIView new];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    _bottomLineView = bottomLineView;
+    [self.contentView addSubview:bottomLineView];
+    
 }
 
 - (void)defineLayout {
@@ -120,6 +127,13 @@
     [self.rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.leftButton.mas_right).offset(15.f);
         make.size.and.top.equalTo(self.leftButton);
+    }];
+    
+    [self.bottomLineView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+        make.height.equalTo(@0.5);
     }];
 }
 

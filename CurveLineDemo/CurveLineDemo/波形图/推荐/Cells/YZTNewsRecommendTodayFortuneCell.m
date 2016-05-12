@@ -26,6 +26,8 @@
 @property (nonatomic, strong) UIButton *button2;
 
 @property (nonatomic, strong) UIButton *button3;
+
+@property (nonatomic, strong) UIView *bottomLineView;
 @end
 
 @implementation YZTNewsRecommendTodayFortuneCell
@@ -103,6 +105,11 @@
     [moreButton setTitle:@"更多" forState:UIControlStateNormal];
     _moreButton = moreButton;
     [self.contentView addSubview:moreButton];
+    
+    UIView *bottomLineView = [UIView new];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    _bottomLineView = bottomLineView;
+    [self.contentView addSubview:bottomLineView];
 
 }
 
@@ -154,6 +161,15 @@
         make.right.equalTo(self.contentView.mas_right).offset(-15.f);
         make.size.mas_equalTo(CGSizeMake(50.f, 30.f));
     }];
+    
+   
+    [self.bottomLineView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+        make.height.equalTo(@0.5);
+    }];
+
 }
 
 

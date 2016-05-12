@@ -17,6 +17,8 @@
 ///描述
 @property (nonatomic, strong) UILabel *descLab;
 
+@property (nonatomic, strong) UIView *bottomLineView;
+
 @end
 @implementation YZTNewsRecommendHotSpotAnalysisCell
 
@@ -56,6 +58,12 @@
     descLab.font = [UIFont systemFontOfSize:12.f];
     _descLab = descLab;
     [self.contentView addSubview:descLab];
+    
+    UIView *bottomLineView = [UIView new];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    _bottomLineView = bottomLineView;
+    [self.contentView addSubview:bottomLineView];
+   
 }
 
 - (void)defineLayout {
@@ -81,6 +89,12 @@
           
         }];
     
+    [self.bottomLineView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+        make.height.equalTo(@0.5);
+    }];
     
 }
 

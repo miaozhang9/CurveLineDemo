@@ -15,6 +15,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = color;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.numberOfLines = 2;
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button.titleLabel setAdjustsFontSizeToFitWidth:YES];
     [self addObject:button];

@@ -30,7 +30,7 @@
 
 //@property (nonatomic,strong) YZTNewsRecommendInterestTopicBottomView *topicBottomView;
 
-@property (nonatomic,assign)BOOL isexprand;
+@property (nonatomic, strong) UIView *bottomLineView;
 @end
 @implementation YZTNewsRecommendInterestTopicCell
 
@@ -130,7 +130,10 @@
         [self.contentView addSubview:topicBottomView];
     }
 
-    
+    UIView *bottomLineView = [UIView new];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    _bottomLineView = bottomLineView;
+    [self.contentView addSubview:bottomLineView];
     
 }
 
@@ -182,6 +185,15 @@
         make.top.equalTo(self.likeButton.mas_bottom).offset(30);
         make.size.mas_equalTo(CGSizeMake(1000, 64*3));
         make.leading.equalTo(@0);
+    }];
+
+    
+  
+    [self.bottomLineView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+        make.height.equalTo(@0.5);
     }];
 
 }
