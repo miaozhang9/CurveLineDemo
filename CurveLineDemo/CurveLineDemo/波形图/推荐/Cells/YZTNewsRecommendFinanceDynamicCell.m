@@ -22,7 +22,7 @@ static CGFloat const kImageViewMargin = 5.f;//图片间隔
 @property (nonatomic, strong) UILabel *contentLabel;
 @property (nonatomic, strong) UIButton *expandBtn;
 @property (nonatomic, strong) UIView *line02;
-@property (nonatomic, strong) UIView *point;
+@property (nonatomic, strong) UIImageView *point;
 @end
 
 
@@ -153,10 +153,10 @@ static inline NSAttributedString *attributeSting(NSString *text)
     return _line02;
 }
 
-- (UIView *)point
+- (UIImageView *)point
 {
     if (!_point) {
-        _point = self.createView();
+        _point =[[UIImageView alloc] initWithImage:nil];
         _point.layer.cornerRadius = 5.f / 2;
         _point.clipsToBounds = YES;
     }

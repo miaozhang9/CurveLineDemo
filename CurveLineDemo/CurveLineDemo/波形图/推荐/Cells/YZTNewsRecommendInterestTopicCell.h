@@ -8,12 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "YZTNewsRecommendInterestTopicBottomView.h"
-typedef void (^ClickChangeBlock)(id object);
+
+
+typedef NS_ENUM(NSInteger, TopicClickEventType) {
+    LikeClickEvent = 0,//喜欢
+    NoLikeClickEvent = 1,//不喜欢
+    MoreClickEvent  = 2,//更多
+};
+typedef void (^TopicButtonClickChangeBlock)(id object ,TopicClickEventType);
 
 
 @interface YZTNewsRecommendInterestTopicCell : UITableViewCell
 
-@property (nonatomic, copy) ClickChangeBlock clickChangeBlock;
+@property (nonatomic, copy) TopicButtonClickChangeBlock clickChangeBlock;
 
 
 @property (nonatomic,strong) YZTNewsRecommendInterestTopicBottomView *topicBottomView;;

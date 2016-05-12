@@ -95,6 +95,7 @@
     if (!_likeButton) {
         UIButton *likeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         likeButton.backgroundColor = [UIColor purpleColor];
+        [likeButton addTarget:self action:@selector(likeButtonClickEvent:) forControlEvents:UIControlEventTouchUpInside];
         _likeButton = likeButton;
         [self.contentView addSubview:likeButton];
 
@@ -103,6 +104,7 @@
     if (!_noLikeButton) {
         UIButton *noLikeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         noLikeButton.backgroundColor = [UIColor purpleColor];
+        [noLikeButton addTarget:self action:@selector(noLikeButtonClickEvent:) forControlEvents:UIControlEventTouchUpInside];
         _noLikeButton = noLikeButton;
         [self.contentView addSubview:noLikeButton];
     }
@@ -200,11 +202,24 @@
 
 
 - (void)moreButtonClickEvent:(UIButton *)sender {
-sender.selected = !sender.selected;
+  sender.selected = !sender.selected;
     NSLog(@"%d",sender.selected);
 
     if (self.clickChangeBlock)
-        self.clickChangeBlock(self);
+        self.clickChangeBlock(self,MoreClickEvent);
+
+}
+
+-(void)noLikeButtonClickEvent:(UIButton *)sender {
+    if (self.clickChangeBlock)
+        self.clickChangeBlock(self,NoLikeClickEvent);
+
+    
+}
+- (void)likeButtonClickEvent:(UIButton *)sender {
+    
+    if (self.clickChangeBlock)
+        self.clickChangeBlock(self,LikeClickEvent);
 
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

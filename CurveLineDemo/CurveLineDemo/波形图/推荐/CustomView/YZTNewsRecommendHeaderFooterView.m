@@ -6,7 +6,7 @@
 //  Copyright © 2016年 MZ. All rights reserved.
 //
 
-#import "YZTNewsRecommendHeaderView.h"
+#import "YZTNewsRecommendHeaderFooterView.h"
 #define Byte 2
 #define TopLineHeight 0.5
 #define BottomLineHeight 0.5
@@ -16,13 +16,20 @@
 #define HeaderImageWidth 14
 #define HeaderNameHeight 30
 #define HeaderNameWidth 45
-@implementation YZTNewsRecommendHeaderView
+@implementation YZTNewsRecommendHeaderFooterView
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame isFooter:(BOOL)isFooter
 {
     self = [super initWithFrame:frame];
     if (self) {
+         _isFooter = isFooter;
+        if (_isFooter) {
+            self.backgroundColor = [UIColor whiteColor];
+        }else{
         self.backgroundColor = [UIColor clearColor];
+        }
+        
+       
         [self initDefault];
     }
     return self;
@@ -30,10 +37,12 @@
 
 - (void)initDefault{
     
-    _headerTopLineView = [[UIView alloc] init];
-//    _headerTopLineView.backgroundColor = [UIColor yzt_colorWithHexString:@"#cccccc"];
-    [self addSubview:_headerTopLineView];
-    [_headerTopLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+    _topLineView = [[UIView alloc] init];
+    _topLineView.hidden = YES;
+    _topLineView.backgroundColor = [UIColor grayColor];
+//    _topLineView.backgroundColor = [UIColor yzt_colorWithHexString:@"#cccccc"];
+    [self addSubview:_topLineView];
+    [_topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).with.offset(0);
         make.top.equalTo(self.mas_top).with.offset(0);
         make.width.mas_equalTo(self);
@@ -51,12 +60,12 @@
         make.height.mas_equalTo(BottomLineHeight);
     }];
     
-    _headerBottomLineView = [[UIView alloc] init];
-    _headerBottomLineView.backgroundColor = [UIColor grayColor];
-//    _headerBottomLineView.backgroundColor = [UIColor yzt_colorWithHexString:@"#cccccc"];
-    //    _headerBottomLineView.backgroundColor = [UIColor whiteColor];
-    [self addSubview:_headerBottomLineView];
-    [_headerBottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+    _bottomLineView = [[UIView alloc] init];
+    _bottomLineView.backgroundColor = [UIColor grayColor];
+//    _bottomLineView.backgroundColor = [UIColor yzt_colorWithHexString:@"#cccccc"];
+    //    _bottomLineView.backgroundColor = [UIColor whiteColor];
+    [self addSubview:_bottomLineView];
+    [_bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).with.offset(LeftMaigin);
         make.top.equalTo(self.mas_top).with.offset(HeaderHeight);
         make.width.mas_equalTo([UIScreen mainScreen].bounds.size.width-(56/Byte));
@@ -73,22 +82,33 @@
         make.height.mas_equalTo(HeaderImageHeight);
     }];
     
-    _headerNameLabel = [[UILabel alloc] init];
-    _headerNameLabel.font = [UIFont systemFontOfSize:14.f];
-//    _headerNameLabel.textColor = [UIColor yzt_colorWithHexString:@"#4a4a4a"];
-    [self addSubview:_headerNameLabel];
-    [_headerNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        if ( _headerImageView.image) {
-          
-            make.left.equalTo(_headerImageView.mas_right).with.offset(LeftMaigin);
-           
-        }else{
-            make.left.equalTo(self.mas_left).offset(15.f);
-        }
-        make.centerY.equalTo(self.mas_centerY);
-        make.right.equalTo(self.mas_right).offset(15.f);
-
-    }];
+    _nameLabel = [[UILabel alloc] init];
+    _nameLabel.font = [UIFont systemFontOfSize:14.f];
+//    _nameLabel.textColor = [UIColor yzt_colorWithHexString:@"#4a4a4a"];
+    [self addSubview:_nameLabel];
+    if (!_isFooter) {
+        [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            if ( _headerImageView.image) {
+                
+                make.left.equalTo(_headerImageView.mas_right).with.offset(LeftMaigin);
+                
+            }else{
+                make.left.equalTo(self.mas_left).offset(15.f);
+            }
+            make.centerY.equalTo(self.mas_centerY);
+            make.right.equalTo(self.mas_right).offset(15.f);
+            
+        }];
+    }else{
+    
+        [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self.mas_centerX);
+            make.centerY.equalTo(self.mas_centerY);
+//            make.right.equalTo(self.mas_right).offset(15.f);
+            
+        }];
+    }
+   
     
 }
 
